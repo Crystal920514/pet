@@ -2,7 +2,7 @@
 <template>
   <div class="shoppingCart">
     <div class="shop-header">
-      <span class="item_icon" @click="$router.back()">
+      <span class="item_icon" @click="$router.replace('/home')">
         <i class="iconfont icon-fanhui"></i>
       </span>
       <span>购物车</span>

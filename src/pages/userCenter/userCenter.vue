@@ -2,7 +2,7 @@
   <div class="login">
     <div class="login-bg">
       <div class="login-header">
-        <span class="item_icon" @click="$router.back()">
+        <span class="item_icon" @click="$router.replace('/home')">
           <i class="iconfont icon-fanhui"></i>
         </span>
         <span>注册</span>

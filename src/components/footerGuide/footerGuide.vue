@@ -6,7 +6,7 @@
       </span>
       <span>首页</span>
     </span>
-    <span class="item" :class="{on:$route.path ==='/sort'}" @click="goto('/sort')">
+    <span class="item" :class="{on:$route.path.slice(0,5) ==='/sort'}" @click="goto('/sort')">
       <span class="item_icon">
         <i class="iconfont icon-sousuo1"></i>
       </span>

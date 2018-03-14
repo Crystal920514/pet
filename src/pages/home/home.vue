@@ -73,11 +73,143 @@
           <img src="./images/pic/2.jpg" alt="">
         </div>
         <div class="surprise">
-          <div class="surprise-top"></div>
-          <div class="surprise-bottom"></div>
+          <div class="surprise-top">
+              <div class="titleImg">
+                <img src="./images/pic/3.png">
+              </div>
+              <div class="titleText">距本场结束</div>
+              <div class="time">
+                  <span class="time1-1">00</span>
+                  <span class="time-zi">:</span>
+                  <span class="time1-1">25</span>
+                  <span class="time-zi">:</span>
+                  <span class="time1-1">02</span>
+              </div>
+              <div class="more">
+                  <img src="./images/pic/4.jpg">
+              </div>
+          </div>
+          <div class="surprise-bottom">
+            <ul class="surprise-list">
+              <li class="list-item">
+                <img src="./images/pic/11.jpg" alt="">
+                <span class="new">￥8.88</span>
+                <span class="old">省￥28.8</span>
+              </li>
+              <li class="list-item">
+                <img src="./images/pic/12.jpg" alt="">
+                <span class="new">￥8.88</span>
+                <span class="old">省￥28.8</span>
+              </li>
+              <li class="list-item">
+                <img src="./images/pic/13.jpg" alt="">
+                <span class="new">￥8.88</span>
+                <span class="old">省￥28.8</span>
+              </li>
+              <li class="list-item">
+                <img src="./images/pic/14.jpg" alt="">
+                <span class="new">￥8.88</span>
+                <span class="old">省￥28.8</span>
+              </li>
+              <li class="list-item">
+                <img src="./images/pic/15.jpg" alt="">
+                <span class="new">￥8.88</span>
+                <span class="old">省￥28.8</span>
+              </li>
+              <li class="list-item">
+                <img src="./images/pic/16.jpg" alt="">
+                <span class="new">￥8.88</span>
+                <span class="old">省￥28.8</span>
+              </li>
+              <li class="list-item">
+                <img src="./images/pic/17.jpg" alt="">
+                <span class="new">￥8.88</span>
+                <span class="old">省￥28.8</span>
+              </li>
+              <li class="list-item">
+                <img src="./images/pic/18.jpg" alt="">
+                <span class="new">￥8.88</span>
+                <span class="old">省￥28.8</span>
+              </li>
+
+
+            </ul>
+
+          </div>
         </div>
         <!--中间一堆乱七八糟的图片，先放着慢慢弄-->
-        <div class="container"></div>
+        <div class="container">
+          <div class="line-pic">
+            <img src="./images/pic/19.jpg" alt="">
+          </div>
+          <div class="line-pic">
+            <img src="./images/pic/20.gif" alt="">
+          </div>
+          <div class="line-pic">
+            <img src="./images/pic/21.jpg" alt="">
+          </div>
+          <!--第二个轮播-->
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <img class="swiper-slide" src="./images/swiper/6.jpg" >
+              <img class="swiper-slide" src="./images/swiper/7.jpg" >
+              <img class="swiper-slide" src="./images/swiper/8.jpg" >
+              <img class="swiper-slide" src="./images/swiper/9.jpg" >
+              <img class="swiper-slide" src="./images/swiper/10.jpg" >
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+          <div class="line-pic">
+            <img src="./images/pic/22.jpg" alt="">
+          </div>
+          <!--一堆小图-->
+          <div class="small-pic">
+            <img src="./images/pic/23.jpg" alt="">
+            <img src="./images/pic/24.jpg" alt="">
+            <img src="./images/pic/25.jpg" alt="">
+            <img src="./images/pic/26.jpg" alt="">
+            <img src="./images/pic/27.jpg" alt="">
+            <img src="./images/pic/28.jpg" alt="">
+            <img src="./images/pic/29.jpg" alt="">
+            <img src="./images/pic/30.jpg" alt="">
+            <img src="./images/pic/31.jpg" alt="">
+            <img src="./images/pic/32.jpg" alt="">
+            <img src="./images/pic/33.jpg" alt="">
+            <img src="./images/pic/34.jpg" alt="">
+            <img src="./images/pic/35.jpg" alt="">
+            <img src="./images/pic/36.jpg" alt="">
+            <img src="./images/pic/37.jpg" alt="">
+            <img src="./images/pic/38.jpg" alt="">
+            <img src="./images/pic/39.jpg" alt="">
+            <img src="./images/pic/40.jpg" alt="">
+            <img src="./images/pic/41.jpg" alt="">
+            <img src="./images/pic/42.jpg" alt="">
+            <img src="./images/pic/43.jpg" alt="">
+            <img src="./images/pic/44.jpg" alt="">
+          </div>
+          <div class="line-pic">
+            <img src="./images/pic/45.jpg" alt="">
+          </div>
+          <div class="line-pic">
+            <img src="./images/pic/46.jpg" alt="">
+          </div>
+          <div class="line-pic">
+            <img src="./images/pic/47.jpg" alt="">
+          </div>
+          <div class="line-pic-two">
+            <img  class="pic-item" src="./images/pic/48.jpg" alt="">
+            <div class="pic-item" >
+              <img src="./images/pic/49.jpg" alt="">
+              <img src="./images/pic/50.jpg" alt="">
+            </div>
+          </div>
+          <div class="line-pic">
+            <img src="./images/pic/51.jpg" alt="">
+          </div>
+
+
+        </div>
         <!--内容区的底部-->
         <div class="content-footer">
           <div>
@@ -107,6 +239,10 @@
         scrollY: true,
         click:true
       })
+      let scroll3 = new BScroll('.surprise-bottom',{
+        scrollX: true,
+        click:true
+      })
       let swiper = new Swiper('.swiper-container', {
         pagination: {
           el: '.swiper-pagination',
@@ -126,13 +262,11 @@
   .home
     width 100%
     height 100%
-    position relative
     font-size 0
     .header
       height 86px
-      width 100%
       background-color white
-      position fixed
+      position absolute
       top 0
       left 0
       right 0
@@ -191,11 +325,10 @@
       top 86px
       bottom 46px
       .content
-        background-color white
+        background-color black
         position relative
         .swiper-container
           width 100%
-          height 157.86px
           img
             width 100%
         .pic-bottom
@@ -219,10 +352,69 @@
           width 100%
           >img
             width 100%
+        .surprise
+          background-color white
+          width 100%
+          .surprise-top
+            width 100%
+            display flex
+            justify-content space-between
+            align-items center
+            .titleImg
+              >img
+                width 90px
+            .titleText
+              font-size 12px
+            .time
+              font-size 12px
+            .more
+              >img
+                width 50px
+          .surprise-bottom
+            width 100%
+            height 130px
+            .surprise-list
+              width 960px
+              height 120px
+              display flex
+              .list-item
+                margin-right 20px
+                display flex
+                flex-direction column
+                justify-content space-around
+                align-items center
+                .new
+                  color red
+                  font-size 14px
+                .old
+                  color #7e8c8d
+                  font-size 14px
+                img
+                  width 100px
+        .container
+          width 100%
+          .line-pic
+            width 100%
+            >img
+              width 100%
+          .small-pic
+            width 100%
+            >img
+              width 50%
+          .line-pic-two
+            width 100%
+            >img
+              width 50%
+            >div
+              float right
+              width 50%
+              >img
+                width 100%
         .content-footer
           width 100%
           height 86px
           font-size 14px
+          background-color white
           >div
             display flex
             justify-content space-around
@@ -230,7 +422,6 @@
             margin 0 auto
             width 80%
             line-height 60px
-
           >p
             font-size 12px
             text-align center

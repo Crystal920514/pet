@@ -28,3 +28,10 @@
 ### 项目进度
 - 完成主体路由搭建
 - 基本完成首页，购物车静态页面
+
+## 3-15
+### 遇到问题
+- 分类页写了二级路由之后，点击footer里的分类无法改变样式
+  - 原因是:class="{on:$route.path==='/sort'}"中$route.path应该是/sort/tab1或/sort/tab2。
+    全等判断为false,无法绑定on
+  - 解决，通过截串:class="{on:$route.path.slice(0,5) ==='/sort'}" 之后解决
