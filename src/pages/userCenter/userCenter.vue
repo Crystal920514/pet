@@ -49,4 +49,5 @@
           width 100%
       .login-bottom
         position absolute
+        top 200px
 </style>
