@@ -231,6 +231,7 @@
   import 'swiper/dist/css/swiper.min.css'
   export default {
     mounted(){
+
       let scroll = new BScroll('.header-nav',{
         scrollX: true,
         click:true
@@ -243,16 +244,19 @@
         scrollX: true,
         click:true
       })
-      let swiper = new Swiper('.swiper-container', {
-        pagination: {
-          el: '.swiper-pagination',
-          dynamicBullets: true,
-        },
-        autoplay: {
-          delay: 2500,
-          disableOnInteraction: false,
-        }
-      })
+      setTimeout(()=>{
+        let swiper = new Swiper('.swiper-container', {
+          pagination: {
+            el: '.swiper-pagination',
+            dynamicBullets: true,
+          },
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+          }
+        })
+      },200)
+
 
     }
   }

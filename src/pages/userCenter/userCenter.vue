@@ -5,18 +5,78 @@
         <span class="item_icon" @click="$router.replace('/home')">
           <i class="iconfont icon-fanhui"></i>
         </span>
-        <span>注册</span>
+        <span @click="setShow">注册</span>
       </div>
       <div class="login-logo">
         <img src="./images/logo.png" alt="">
       </div>
-      <div class="login-bottom"></div>
+      <div class="login-bottom">
+        <span @click="isPwd=true">普通登录</span>
+        <span @click="isPwd=false">手机动态密码登陆</span>
+        <p :class="isPwd?'left':'right'"></p>
+      </div>
+      <div class="pwd-code">
+        <div class="login-pwd" v-if="isPwd">
+          <div>
+            <input type="text" placeholder="手机号/邮箱/用户名">
+          </div>
+          <div>
+            <input type='password' placeholder="输入密码">
+          </div>
+          <div>
+            <span>忘记密码?</span>
+          </div>
+          <div>
+            <button>登录</button>
+          </div>
+        </div>
+        <div class="login-code" v-else>
+          <div>
+            <input type="text" maxlength="11" placeholder="已注册的手机号">
+          </div>
+          <div>
+            <input type='text' placeholder="请输入图片内容">
+          </div>
+          <div>
+            <input type="password" placeholder="动态密码">
+          </div>
+          <div>
+            <span>忘记密码?</span>
+          </div>
+          <div>
+            <button>登录</button>
+          </div>
+        </div>
+      </div>
+      <div class="login-pay-qq">
+        <p>合作网站登录</p>
+        <div>
+          <img src="./images/login_ico2.png" alt="">
+          <img src="./images/login_ico4.png" alt="">
+        </div>
+      </div>
+      <div class="register" :class="{on:isShow}">
+        <input type="text" maxlength="11" placeholder="请输入手机号码">
+        <p>下一步</p>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
-  export default {}
+  export default {
+    data(){
+      return {
+        isPwd:true,
+        isShow:false
+      }
+    },
+    methods:{
+      setShow(){
+        this.isShow = true
+      }
+    }
+  }
 </script>
 
 <style lang="stylus" rel="stylesheet/stylus">
@@ -49,5 +109,98 @@
           width 100%
       .login-bottom
         position absolute
-        top 200px
+        left 0
+        right 0
+        height 50px
+        background-color rgba(220, 220, 220, 0.53)
+        top 125px
+        line-height 50px
+        display flex
+        justify-content space-around
+        font-size 16px
+        color white
+        p
+          border-left: 10px solid transparent;
+          border-right: 10px solid transparent;
+          border-bottom: 10px solid #fff;
+          position: absolute;
+          left 54px
+          bottom 0
+          &.left
+            left 54px
+          &.right
+            left 213px
+      .pwd-code
+        >div
+          position absolute
+          width 100%
+          height 250px
+          top 185px
+          >div
+            width 100%
+            text-align center
+            height 45px
+            line-height 45px
+            >input
+              width 80%
+              border-bottom 1px solid #E2E2E2
+              outline none
+              height 40px
+              padding-left 20px
+            >span
+              color #898989
+              float right
+              margin-right 20px
+            >button
+              width 80%
+              border none
+              border-radius 5px
+              height 40px
+              color white
+              background-color #2EC975
+      .login-pay-qq
+        width 100%
+        position absolute
+        bottom 50px
+        display flex
+        flex-direction column
+        align-items center
+        >p
+          font-size 14px
+          color #999
+          height 30px
+        >div
+          width 130px
+          display flex
+          justify-content space-between
+          align-items center
+          >img
+            width 50px
+      .register
+        position absolute
+        left 0
+        right 0
+        bottom 0
+        top 0
+        background-color white
+        display none
+        text-align center
+        &.on
+          display block
+          >input
+            width 80%
+            height 40px
+            border-bottom 1px solid #E2E2E2
+            outline none
+            padding-left 20px
+            margin-bottom  10px
+          >p
+            width 80%
+            border-radius 5px
+            height 30px
+            line-height 30px
+            color white
+            margin 0 auto
+            background-color #d7d7d7
+
 </style>

@@ -4,12 +4,23 @@
         <router-link to="/sort/tab1"><span :class="{on:$route.path ==='/sort/tab1'}">分类</span></router-link>
         <router-link to="/sort/tab2"><span :class="{on:$route.path ==='/sort/tab2'}">品牌</span></router-link>
     </div>
-    <router-view></router-view>
+    <router-view :sort="sort" :brand="brand"></router-view>
   </div>
 </template>
 
 <script>
-  export default {}
+  import {mapState} from 'vuex'
+  export default {
+    mounted () {
+      this.$store.dispatch('reqSort')
+      this.$store.dispatch('reqBrand')
+    },
+
+    computed:{
+      ...mapState(['sort','brand']),
+    },
+
+  }
 </script>
 
 <style lang="stylus" rel="stylesheet/stylus">

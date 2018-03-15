@@ -15,6 +15,9 @@ export default new VueRouter({
     {
       path:'/home',
       component:home,
+      meta: {
+        showFooter: true // 需要显示底部组件
+      }
     },
     {
       path:'/sort',
@@ -23,24 +26,37 @@ export default new VueRouter({
         {
           path:'tab1',
           component:tab1,
+          meta: {
+            showFooter: true // 需要显示底部组件
+          },
         },
         {
           path:'tab2',
           component:tab2,
+          meta: {
+            showFooter: true // 需要显示底部组件
+          },
         },
         {
           path:'',
           redirect:'tab1'
         },
-      ]
+      ],
+
     },
     {
       path:'/shoppingCart',
       component:shoppingCart,
+      meta: {
+        showFooter: false // 需要显示底部组件
+      }
     },
     {
       path:'/userCenter',
       component:userCenter,
+      meta: {
+        showFooter: false // 需要显示底部组件
+      }
     },
     {
       path:'/',
