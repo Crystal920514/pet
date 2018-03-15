@@ -222,6 +222,8 @@
         </div>
       </div>
     </div>
+    <!--狗头动画-->
+    <div class="dog"></div>
   </div>
 </template>
 
@@ -429,4 +431,22 @@
           >p
             font-size 12px
             text-align center
+    .dog
+      width 42px
+      height 47px
+      background url("./images/gofish.png") no-repeat
+      background-size 84px
+      //background-position -42px 0
+      position absolute
+      bottom 50px
+      right 0
+      animation dog 1s steps(1,end) infinite
+      @keyframes dog
+        0%
+          background-position 0 0
+        50%
+          background-position -42px 0
+        100%
+          background-position 0 0
+
 </style>

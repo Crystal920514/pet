@@ -18,13 +18,19 @@
       <div class="pwd-code">
         <div class="login-pwd" v-if="isPwd">
           <div>
+            <span class="item_icon">
+              <i class="iconfont icon-xingmingyonghumingnicheng"></i>
+             </span>
             <input type="text" placeholder="手机号/邮箱/用户名">
           </div>
           <div>
+            <span class="item_icon">
+              <i class="iconfont icon-mima"></i>
+            </span>
             <input type='password' placeholder="输入密码">
           </div>
           <div>
-            <span>忘记密码?</span>
+            <p>忘记密码?</p>
           </div>
           <div>
             <button>登录</button>
@@ -32,16 +38,25 @@
         </div>
         <div class="login-code" v-else>
           <div>
+            <span class="item_icon">
+              <i class="iconfont icon-shouji"></i>
+            </span>
             <input type="text" maxlength="11" placeholder="已注册的手机号">
           </div>
           <div>
+            <span class="item_icon">
+              <i class="iconfont icon-mima"></i>
+            </span>
             <input type='text' placeholder="请输入图片内容">
           </div>
           <div>
+            <span class="item_icon">
+              <i class="iconfont icon-mima"></i>
+            </span>
             <input type="password" placeholder="动态密码">
           </div>
           <div>
-            <span>忘记密码?</span>
+            <p>忘记密码?</p>
           </div>
           <div>
             <button>登录</button>
@@ -56,6 +71,9 @@
         </div>
       </div>
       <div class="register" :class="{on:isShow}">
+        <span class="item_icon">
+          <i class="iconfont icon-shouji"></i>
+        </span>
         <input type="text" maxlength="11" placeholder="请输入手机号码">
         <p>下一步</p>
       </div>
@@ -148,6 +166,8 @@
               height 40px
               padding-left 20px
             >span
+              position absolute
+            >p
               color #898989
               float right
               margin-right 20px
@@ -187,6 +207,9 @@
         text-align center
         &.on
           display block
+          >span
+            position absolute
+            top 12px
           >input
             width 80%
             height 40px
