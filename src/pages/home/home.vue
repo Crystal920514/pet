@@ -231,9 +231,10 @@
   import BScroll from 'better-scroll'
   import Swiper from 'swiper'
   import 'swiper/dist/css/swiper.min.css'
+  import {mapState} from 'vuex'
   export default {
     mounted(){
-
+      this.$store.dispatch('reqHome')
       let scroll = new BScroll('.header-nav',{
         scrollX: true,
         click:true
@@ -258,8 +259,9 @@
           }
         })
       },200)
-
-
+    },
+    computed:{
+      ...mapState(['home'])
     }
   }
 </script>

@@ -1,7 +1,10 @@
 import Vue from 'vue'
-import {RECEIVE_SORT ,RECEIVE_BRAND} from './mutation-types'
+import {RECEIVE_HOME,RECEIVE_SORT ,RECEIVE_BRAND} from './mutation-types'
 
 export default {
+  [RECEIVE_HOME](state,{home}){
+    state.home = home
+  },
   [RECEIVE_SORT](state,{sort}){
     state.sort = sort
   },

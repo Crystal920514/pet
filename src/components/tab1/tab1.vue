@@ -3,22 +3,32 @@
     <div class="tab1-left" >
       <ul class="left-list">
         <li v-for="(s,index) in sort" :key="index"
-        @click="getIndex(index)" :class="{on:index===leftIndex}">{{s.name}}</li>
+            @click="getIndex(index)" :class="{on:index===leftIndex}">{{s.name}}</li>
       </ul>
     </div>
-    <div class="tab1-right" >
-      <div class="right-list-top" v-for="(c,index) in sort[leftIndex].cate_list" :key="index">
-        <p class="right-title">{{c.title}}</p>
-        <div >
-          <ul class="right-pic">
-            <li  v-for="(l,index) in c.list" :key="index">
-              <img :src="l.photo" alt="">
-              <p>{{l.name}}</p>
-            </li>
-          </ul>
+    <div class="tab1-right">
+      <div v-if="sort[leftIndex]">
+        <div class="right-list-top" v-for="(c,index) in sort[leftIndex].cate_list" :key="index">
+          <div class="type0" v-if="c.type===0">
+            <p class="right-title">{{c.title}}</p>
+            <ul class="right-pic">
+              <li  v-for="(l,index) in c.list" :key="index">
+                <img :src="l.photo" alt="">
+                <p>{{l.name}}</p>
+              </li>
+            </ul>
+          </div>
+          <div class="type2" v-if="c.type===2">
+            <p class="type2-title">{{c.title}}</p>
+            <ul class="type2-list">
+              <li class="type2-item" v-for="(l,index) in c.list" :key="index">
+                <img class="type2-pic" :src="l.logo" alt="">
+                <p>{{l.name}}</p>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-      <div class="right-list-bottom"></div>
     </div>
   </div>
 </template>
@@ -35,19 +45,31 @@
     props:{
       sort:Array
     },
-    mounted(){
-      this.$nextTick(() => {
-        let scroll = new BScroll('.tab1-left', {
-          scrollY: true,
-          click: true
-        })
-      })
-    },
     methods:{
       getIndex(index){
         this.leftIndex = index
       }
+    },
+    mounted(){
+        this.$nextTick(() => {
+          let scroll = new BScroll('.tab1-left', {
+            scrollY: true,
+            click: true
+          })
+      })
+    },
+    watch:{
+      leftIndex(){
+        this.$nextTick(() => {
+          let scroll = new BScroll('.tab1-right', {
+            scrollY: true,
+            click: true
+          })
+        })
+      }
     }
+
+
   }
 </script>
 
@@ -84,29 +106,53 @@
       right 0
       top 0
       bottom 0
-      .right-list-top
-        width 100%
-        .right-title
-          color #7e8c8d
-          font-size 12px
-          height 30px
-          line-height 30px
-          margin-top 10px
-          margin-left 5px
-        div
-          .right-pic
-            width 100%
-            display flex
-            flex-wrap wrap
-            >li
-              width 33%
-              text-align center
-              >img
-                width 80%
-                border 1px solid #dbe9ea
-              >p
-                height 50px
-                font-size 14px
-                line-height 50px
-
+      overflow hidden
+      >div
+        .right-list-top
+          width 100%
+          .type0
+            .right-title
+              color #7e8c8d
+              font-size 12px
+              height 30px
+              line-height 30px
+              margin-top 10px
+              margin-left 5px
+            .right-pic
+              width 100%
+              display flex
+              flex-wrap wrap
+              >li
+                width 33%
+                text-align center
+                >img
+                  width 80%
+                  border 1px solid #dbe9ea
+                >p
+                  height 50px
+                  font-size 14px
+                  line-height 50px
+          .type2
+            .type2-title
+              color #7e8c8d
+              font-size 12px
+              height 30px
+              line-height 30px
+              margin-top 10px
+              margin-left 5px
+            .type2-list
+              width 100%
+              overflow hidden
+              .type2-item
+                width 50%
+                float left
+                text-align center
+                .type2-pic
+                  width 95px
+                  height 50px
+                  border 1px solid #dbe9ea
+                >p
+                  height 50px
+                  font-size 14px
+                  line-height 50px
 </style>

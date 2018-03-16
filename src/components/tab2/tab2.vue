@@ -14,7 +14,6 @@
             <p class="tab2-logo-bottom">{{l.address}}</p>
           </li>
         </ul>
-
       </div>
     </div>
   </div>
