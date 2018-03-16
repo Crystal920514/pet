@@ -24,14 +24,8 @@
         </div>
       </div>
       <div class="header-nav">
-        <div>
-          <span>首页</span>
-          <span>狗狗主粮</span>
-          <span>服饰城</span>
-          <span>医疗保健</span>
-          <span>零食玩具</span>
-          <span>日用外出</span>
-          <span>美容香波</span>
+        <div v-if="home[19]">
+          <span @click="getNavIndex(index)" :class="{on:index===navIndex}" v-for="(h,index) in home[19].menus">{{h.menu_name}}</span>
         </div>
       </div>
     </div>
@@ -172,14 +166,16 @@
   import Swiper from 'swiper'
   import 'swiper/dist/css/swiper.min.css'
   import {mapState} from 'vuex'
+  import {Lazyload} from 'mint-ui'
   export default {
+    data(){
+      return {
+        navIndex:0
+      }
+    },
     mounted(){
       this.$store.dispatch('reqHome')
       setTimeout(()=>{
-        let scroll = new BScroll('.header-nav',{
-          scrollX: true,
-          click:true
-        })
         let scroll2 = new BScroll('.content-box',{
           scrollY: true,
           click:true
@@ -198,10 +194,25 @@
             disableOnInteraction: false,
           }
         })
-      },800)
+      },1200)
+    },
+    methods:{
+      getNavIndex(index){
+        this.navIndex = index
+      }
     },
     computed:{
       ...mapState(['home'])
+    },
+    watch:{
+      home(){
+        this.$nextTick(()=>{
+          let scroll = new BScroll('.header-nav',{
+            scrollX: true,
+            click:true
+          })
+        })
+      }
     }
   }
 </script>
@@ -265,6 +276,9 @@
             height 36px
             line-height 36px
             color #666666
+            &.on
+              color green
+              border-bottom 3px solid green
     .content-box
       width 100%
       position absolute

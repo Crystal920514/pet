@@ -48,12 +48,18 @@
               <i class="iconfont icon-mima"></i>
             </span>
             <input type='text' placeholder="请输入图片内容">
+            <span style="display:block;position: absolute;top:52px;right:0;">
+              <img @click="change($event)" src="https://wap.epet.com/share/seccode.html?hash=5157&amp;height=30&amp;width=85" >
+            </span>
           </div>
           <div>
             <span class="item_icon">
               <i class="iconfont icon-mima"></i>
             </span>
             <input type="password" placeholder="动态密码">
+            <a style="position: absolute;width:100px;font-size: 14px;color: red;
+                      height: 30px; line-height:30px;top:95px;right:0;border: 1px solid black"
+               href="###" >获取动态验证码</a>
           </div>
           <div>
             <p>忘记密码?</p>
@@ -74,8 +80,10 @@
         <span class="item_icon">
           <i class="iconfont icon-shouji"></i>
         </span>
-        <input type="text" maxlength="11" placeholder="请输入手机号码">
-        <p>下一步</p>
+        <input type="text" maxlength="11" placeholder="请输入手机号码" v-model="phone" >
+        <p :class="{on:phone}">下一步</p>
+        <br>
+        <p class="on" style="background-color: olivedrab" @click="setShow">返回</p>
       </div>
     </div>
   </div>
@@ -86,13 +94,19 @@
     data(){
       return {
         isPwd:true,
-        isShow:false
+        isShow:false,
+        phone:''
       }
     },
     methods:{
       setShow(){
-        this.isShow = true
+        this.isShow = !this.isShow
+      },
+      change(event){
+        event.target.src='https://wap.epet.com/share/seccode.html?amp;height=30&amp;width=85&_='+Math.random()
       }
+
+
     }
   }
 </script>
@@ -225,5 +239,8 @@
             color white
             margin 0 auto
             background-color #d7d7d7
+            &.on
+              background-color red
+              color white
 
 </style>
