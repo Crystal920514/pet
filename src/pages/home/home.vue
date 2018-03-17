@@ -24,9 +24,13 @@
         </div>
       </div>
       <div class="header-nav">
-        <div v-if="home[19]">
-          <span @click="getNavIndex(index)" :class="{on:index===navIndex}" v-for="(h,index) in home[19].menus">{{h.menu_name}}</span>
-        </div>
+        <ul v-if="home[19]">
+          <li @click="getNavIndex(index)" :class="{on:index===navIndex}" v-for="(h,index) in home[19].menus">
+            <router-link to="/dog">
+              <span>{{h.menu_name}}</span>
+            </router-link>
+          </li>
+        </ul>
       </div>
     </div>
     <div class="content-box">
@@ -174,45 +178,41 @@
       }
     },
     mounted(){
-      this.$store.dispatch('reqHome')
-      setTimeout(()=>{
-        let scroll2 = new BScroll('.content-box',{
-          scrollY: true,
-          click:true
-        })
-        let scroll3 = new BScroll('.surprise-bottom',{
-          scrollX: true,
-          click:true
-        })
-        let swiper = new Swiper('.swiper-container', {
-          pagination: {
-            el: '.swiper-pagination',
-            dynamicBullets: true,
-          },
-          autoplay: {
-            delay: 2500,
-            disableOnInteraction: false,
-          }
-        })
-      },1200)
-    },
-    methods:{
-      getNavIndex(index){
-        this.navIndex = index
-      }
-    },
-    computed:{
-      ...mapState(['home'])
-    },
-    watch:{
-      home(){
+      this.$store.dispatch('reqHome',()=>{
         this.$nextTick(()=>{
+          let scroll2 = new BScroll('.content-box',{
+            scrollY: true,
+            click:true
+          })
+          let scroll3 = new BScroll('.surprise-bottom',{
+            scrollX: true,
+            click:true
+          })
+          let swiper = new Swiper('.swiper-container', {
+            pagination: {
+              el: '.swiper-pagination',
+              dynamicBullets: true,
+            },
+            autoplay: {
+              delay: 2500,
+              disableOnInteraction: false,
+            }
+          })
           let scroll = new BScroll('.header-nav',{
             scrollX: true,
             click:true
           })
         })
+      })
+    },
+    methods:{
+      getNavIndex(index){
+        this.navIndex = index
+
       }
+    },
+    computed:{
+      ...mapState(['home'])
     }
   }
 </script>
@@ -266,19 +266,23 @@
               font-size 12px
       .header-nav
         width 100%
-        >div
+        >ul
           width 448px
           display flex
-          span
-            width 64px
+          >li
             text-align center
-            font-size 14px
-            height 36px
-            line-height 36px
-            color #666666
+            width 80px
             &.on
               color green
               border-bottom 3px solid green
+            span
+              width 64px
+              text-align center
+              font-size 14px
+              height 36px
+              line-height 36px
+              color #666666
+
     .content-box
       width 100%
       position absolute

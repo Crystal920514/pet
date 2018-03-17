@@ -7,6 +7,7 @@ import shoppingCart from '../pages/shoppingCart/shoppingCart.vue'
 import userCenter from '../pages/userCenter/userCenter.vue'
 import tab1 from '../components/tab1/tab1.vue'
 import tab2 from '../components/tab2/tab2.vue'
+import dog from '../components/dog/dog.vue'
 
 Vue.use(VueRouter)
 
@@ -62,5 +63,9 @@ export default new VueRouter({
       path:'/',
       redirect:'/home'
     },
+    {
+      path:'/dog',
+      component:dog
+    }
   ]
 })

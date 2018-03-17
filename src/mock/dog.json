@@ -1,0 +1,1482 @@
+{
+    "dog": [
+        {
+            "index": "2209",
+            "is_show": 1,
+            "type": "1",
+            "is_dynamic": "0",
+            "type_name": "图片轮播广告",
+            "value": [
+                {
+                    "advid": "23390",
+                    "atid": "0",
+                    "image": "https://img2.epetbar.com/nowater/2017-09/15/08/a4a9af65943791fd74db9a5ae3cb38b7.png@!water",
+                    "img_size": "750x320",
+                    "target": {
+                        "mode": "web",
+                        "param": "http://sale.epet.com/m/mould/activity/ztMjQ2NA%3D%3D.html?tid=2464"
+                    }
+                }
+            ]
+        },
+        {
+            "index": "2210",
+            "is_show": 1,
+            "type": "102",
+            "is_dynamic": "0",
+            "type_name": "二级可切换菜单",
+            "data": {
+                "categorys": [
+                    {
+                        "name": "国产主粮",
+                        "image": "https://img1.epetbar.com/2017-08/02/14/443c7633200dacd9b0403985b45f42ac.jpg",
+                        "dis_order": "99",
+                        "img_size": "187X136",
+                        "image_choose": "https://img1.epetbar.com/2017-08/02/14/80262ba5cfea6d22408daa472bd763d8.jpg",
+                        "image_choose_size": "187X136",
+                        "small_cate": {
+                            "menu_column": 3,
+                            "menus": [
+                                {
+                                    "name": "全犬",
+                                    "image": "https://img1.epetbar.com/2017-08/02/16/470a7338afe79f6775f32dbb38f26a9c.jpg",
+                                    "img_size": "250X193",
+                                    "target": {
+                                        "mode": "goods_list",
+                                        "param": "cateid:3555|extends_str:3983,4941"
+                                    }
+                                },
+                                {
+                                    "name": "幼犬/哺乳期犬",
+                                    "image": "https://img1.epetbar.com/2017-08/02/16/3bdad8463d8b13fd83230d4777eb5eb8.jpg",
+                                    "img_size": "250X193",
+                                    "target": {
+                                        "mode": "goods_list",
+                                        "param": "attrid:3985,3979"
+                                    }
+                                },
+                                {
+                                    "name": "成犬",
+                                    "image": "https://img1.epetbar.com/2017-08/02/16/56d2cd336393223f4624c35ae65165b2.jpg",
+                                    "img_size": "250X193",
+                                    "target": {
+                                        "mode": "goods_list",
+                                        "param": "cateid:3555|extends_str:3981"
+                                    }
+                                },
+                                {
+                                    "name": "老犬",
+                                    "image": "https://img1.epetbar.com/2017-08/02/16/0f0860a31161c14503f7f943acb944c7.jpg",
+                                    "img_size": "250X193",
+                                    "target": {
+                                        "mode": "goods_list",
+                                        "param": "cateid:3555|extends_str:6520"
+                                    }
+                                },
+                                {
+                                    "name": "小型犬",
+                                    "image": "https://img1.epetbar.com/2017-08/02/16/9ead012bdb55ad1144ad86dd7b522f85.jpg",
+                                    "img_size": "250X193",
+                                    "target": {
+                                        "mode": "goods_list",
+                                        "param": "cateid:3555|extends_str:4939"
+                                    }
+                                },
+                                {
+                                    "name": "中大型犬",
+                                    "image": "https://img1.epetbar.com/2017-08/02/16/ad617b8387e497562c455f5fa9ecd4b3.jpg",
+                                    "img_size": "250X193",
+                                    "target": {
+                                        "mode": "goods_list",
+                                        "param": "cateid:3555|extends_str:4937"
+                                    }
+                                }
+                            ]
+                        },
+                        "target": []
+                    },
+                    {
+                        "name": "进口主粮",
+                        "image": "https://img1.epetbar.com/2017-08/02/14/562c15b9f8f53988959d97d47d63b1a7.jpg",
+                        "dis_order": "99",
+                        "img_size": "187X136",
+                        "image_choose": "https://img1.epetbar.com/2017-08/02/14/f500a1d8b9c334b0be55a349f04b0bec.jpg",
+                        "image_choose_size": "187X136",
+                        "small_cate": {
+                            "menu_column": 3,
+                            "menus": [
+                                {
+                                    "name": "全犬",
+                                    "image": "https://img1.epetbar.com/2017-08/02/15/b21b49c58dea4eb0a9a057795d71620d.jpg",
+                                    "img_size": "250X193",
+                                    "target": {
+                                        "mode": "goods_list",
+                                        "param": "cateid:7|extends_str:3543,3533"
+                                    }
+                                },
+                                {
+                                    "name": "幼犬/哺乳期犬",
+                                    "image": "https://img1.epetbar.com/2017-08/02/15/7c9d752bdbe538ed870974848f25e17d.jpg",
+                                    "img_size": "250X193",
+                                    "target": {
+                                        "mode": "goods_list",
+                                        "param": "attrid:3539,3541"
+                                    }
+                                },
+                                {
+                                    "name": "成犬",
+                                    "image": "https://img1.epetbar.com/2017-08/02/15/d9441034ad9b61ada9853a51388bb340.jpg",
+                                    "img_size": "250X193",
+                                    "target": {
+                                        "mode": "goods_list",
+                                        "param": "cateid:7|extends_str:3537"
+                                    }
+                                },
+                                {
+                                    "name": "老犬",
+                                    "image": "https://img1.epetbar.com/2017-08/02/15/1137016f8c968e4855461fa4f280c728.jpg",
+                                    "img_size": "250X193",
+                                    "target": {
+                                        "mode": "goods_list",
+                                        "param": "cateid:7|extends_str:3535"
+                                    }
+                                },
+                                {
+                                    "name": "小型犬",
+                                    "image": "https://img1.epetbar.com/2017-08/02/15/06ce76f3b037510aa52e31ac7fbeca19.jpg",
+                                    "img_size": "250X193",
+                                    "target": {
+                                        "mode": "goods_list",
+                                        "param": "cateid:7|extends_str:3531"
+                                    }
+                                },
+                                {
+                                    "name": "中大型犬",
+                                    "image": "https://img1.epetbar.com/2017-08/02/15/ab2d57fe1334119316c39345c65af3d4.jpg",
+                                    "img_size": "250X193",
+                                    "target": {
+                                        "mode": "goods_list",
+                                        "param": "cateid:7|extends_str:3529"
+                                    }
+                                }
+                            ]
+                        },
+                        "target": []
+                    },
+                    {
+                        "name": "口味配方",
+                        "image": "https://img1.epetbar.com/2017-08/02/14/5bb670292c914709995b7f59d83b1617.jpg",
+                        "dis_order": "99",
+                        "img_size": "187X136",
+                        "image_choose": "https://img1.epetbar.com/2017-08/02/14/9cd38109100b17000abea371addcb1b0.jpg",
+                        "image_choose_size": "187X136",
+                        "small_cate": {
+                            "menu_column": 3,
+                            "menus": [
+                                {
+                                    "name": "鸡肉",
+                                    "image": "https://img1.epetbar.com/2017-08/02/17/ed38fad33fc6832ffe313498b03442f0.jpg",
+                                    "img_size": "250X193",
+                                    "target": {
+                                        "mode": "goods_list",
+                                        "param": "attrid:4795,4929,6512"
+                                    }
+                                },
+                                {
+                                    "name": "鱼肉",
+                                    "image": "https://img1.epetbar.com/2017-08/02/17/3b22cce883a5abd4adafa377c72048fe.jpg",
+                                    "img_size": "250X193",
+                                    "target": {
+                                        "mode": "goods_list",
+                                        "param": "attrid:4789,4933"
+                                    }
+                                },
+                                {
+                                    "name": "牛肉",
+                                    "image": "https://img1.epetbar.com/2017-08/02/17/01e9a859acc8d1b83a95c026a8d3434f.jpg",
+                                    "img_size": "250X193",
+                                    "target": {
+                                        "mode": "goods_list",
+                                        "param": "attrid:4793,4927"
+                                    }
+                                },
+                                {
+                                    "name": "羊肉",
+                                    "image": "https://img1.epetbar.com/2017-08/02/17/1ae21059eb105ae40e831aaabb84b924.jpg",
+                                    "img_size": "250X193",
+                                    "target": {
+                                        "mode": "goods_list",
+                                        "param": "attrid:4791,4925"
+                                    }
+                                },
+                                {
+                                    "name": "鸭肉",
+                                    "image": "https://img1.epetbar.com/2017-08/02/17/1e168ed6b8efa23da154822faa63d21d.jpg",
+                                    "img_size": "250X193",
+                                    "target": {
+                                        "mode": "goods_list",
+                                        "param": "attrid:4787,4931"
+                                    }
+                                },
+                                {
+                                    "name": "其他",
+                                    "image": "https://img1.epetbar.com/2017-08/02/17/c203dc3fac020eb27a5adf420a3937dc.jpg",
+                                    "img_size": "250X193",
+                                    "target": {
+                                        "mode": "goods_list",
+                                        "param": "attrid:5931,4783,4785"
+                                    }
+                                }
+                            ]
+                        },
+                        "target": []
+                    },
+                    {
+                        "name": "单斤价格",
+                        "image": "https://img1.epetbar.com/2017-08/02/14/9227a22394215f9572d3bea2fe1699d4.jpg",
+                        "dis_order": "99",
+                        "img_size": "187X136",
+                        "image_choose": "https://img1.epetbar.com/2017-08/02/14/9063225106d67e2cd05167f71ff6e7cc.jpg",
+                        "image_choose_size": "187X136",
+                        "small_cate": {
+                            "menu_column": 3,
+                            "menus": [
+                                {
+                                    "name": "10元以内",
+                                    "image": "https://img1.epetbar.com/2017-08/02/19/3ffb6d9a013c82adfd2fd283213ed003.jpg",
+                                    "img_size": "250X193",
+                                    "target": {
+                                        "mode": "goods_list",
+                                        "param": "attrid:6786,3993"
+                                    }
+                                },
+                                {
+                                    "name": "10-20元",
+                                    "image": "https://img1.epetbar.com/2017-08/07/09/f2d733365195efa1db68d410fdb37cec.jpg",
+                                    "img_size": "250X193",
+                                    "target": {
+                                        "mode": "goods_list",
+                                        "param": "attrid:3557,3555,3991,3989"
+                                    }
+                                },
+                                {
+                                    "name": "20-30元",
+                                    "image": "https://img1.epetbar.com/2017-08/07/09/2fd411ba0fdfcb190c37566b2f0d23b0.jpg",
+                                    "img_size": "250X193",
+                                    "target": {
+                                        "mode": "goods_list",
+                                        "param": "attrid:3987,5933 ,3551,3553"
+                                    }
+                                },
+                                {
+                                    "name": "30-40元",
+                                    "image": "https://img1.epetbar.com/2017-08/07/09/3fb09f83eccead0684956d82c73ef385.jpg",
+                                    "img_size": "250X193",
+                                    "target": {
+                                        "mode": "goods_list",
+                                        "param": "attrid:3549,5935"
+                                    }
+                                },
+                                {
+                                    "name": "40-50元",
+                                    "image": "https://img1.epetbar.com/2017-08/07/10/a1c024b1ad2030756b25907fa5cd5513.jpg",
+                                    "img_size": "250X193",
+                                    "target": {
+                                        "mode": "goods_list",
+                                        "param": "attrid:3547,6031"
+                                    }
+                                },
+                                {
+                                    "name": "50元以上",
+                                    "image": "https://img1.epetbar.com/2017-08/07/10/1636231472b2d290f52685936ef2c53c.jpg",
+                                    "img_size": "250X193",
+                                    "target": {
+                                        "mode": "goods_list",
+                                        "param": "attrid:3545,6039"
+                                    }
+                                }
+                            ]
+                        },
+                        "target": []
+                    }
+                ]
+            }
+        },
+        {
+            "index": "2213",
+            "is_show": 1,
+            "type": "100",
+            "is_dynamic": "0",
+            "type_name": "模块分割线",
+            "value": {
+                "image": "",
+                "img_size": "750x25",
+                "target": {}
+            }
+        },
+        {
+            "index": "2212",
+            "is_show": 1,
+            "type": "13",
+            "is_dynamic": "0",
+            "type_name": "通用广告模板",
+            "left_image": {
+                "image": "",
+                "img_size": "",
+                "target": {}
+            },
+            "center_image": {
+                "image": "",
+                "img_size": "",
+                "target": {}
+            },
+            "right_image": {
+                "image": "",
+                "img_size": "",
+                "target": {}
+            },
+            "show_line": "0",
+            "content_images": [
+                [
+                    {
+                        "advid": "22902",
+                        "atid": "0",
+                        "image": "https://img2.epetbar.com/nowater/2017-07/31/14/5df340d068e4bc97759d801edcd5ac19.jpg@!water",
+                        "img_size": "375x422",
+                        "target": {
+                            "mode": "web",
+                            "param": "https://wap.epet.com/specialist/article.html?aid=27"
+                        }
+                    }
+                ],
+                [
+                    {
+                        "advid": "22903",
+                        "atid": "0",
+                        "image": "https://img2.epetbar.com/nowater/2017-07/31/14/6ebc7bc52a02cc2fb2d725dd9ebe58aa.jpg@!water",
+                        "img_size": "375x211",
+                        "target": {
+                            "mode": "web",
+                            "param": "http://sale.epet.com/m/mould/activity/ztMTIxOQ%3D%3D.html?tid=1219"
+                        }
+                    },
+                    {
+                        "advid": "22906",
+                        "atid": "0",
+                        "image": "https://img2.epetbar.com/nowater/2017-07/31/14/e8fa7e93ded2be02792cbade66353832.jpg@!water",
+                        "img_size": "375x211",
+                        "target": {
+                            "mode": "web",
+                            "param": "https://wap.epet.com/petschool/SchoolDetail.html?&aid=36"
+                        }
+                    }
+                ]
+            ]
+        },
+        {
+            "index": "2226",
+            "is_show": 1,
+            "type": "21",
+            "is_dynamic": "0",
+            "type_name": "自定义Title模板",
+            "value": {
+                "title_height": "100",
+                "top_line": {
+                    "isline": 0,
+                    "line_color": "",
+                    "padding": "",
+                    "line_image": {}
+                },
+                "bottom_line": {
+                    "isline": 0,
+                    "line_color": "",
+                    "padding": "",
+                    "line_image": {}
+                },
+                "left": {},
+                "center": {
+                    "type": "image",
+                    "text": {},
+                    "img": {
+                        "image": "https://img2.epetbar.com/nowater/2017-08/16/21/ebf85555c851f683bf33cd4c14f7f68b.jpg",
+                        "img_size": "387x31",
+                        "target": {
+                            "mode": "",
+                            "param": ""
+                        }
+                    }
+                },
+                "right": {}
+            }
+        },
+        {
+            "index": "2215",
+            "is_show": 1,
+            "type": "101",
+            "is_dynamic": "0",
+            "type_name": "单广告+商品列表",
+            "data": {
+                "advAndGoods": [
+                    {
+                        "big_image": {
+                            "image": "https://img2.epetbar.com/nowater/2018-03/06/11/82fcb7a9c439dc489ff8735424745a9d.png@!water",
+                            "img_size": "750X330",
+                            "target": {
+                                "mode": "web",
+                                "param": "http://sale.epet.com/m/mould/activity/ztNDQ0NQ%3D%3D.html?tid=4445"
+                            }
+                        },
+                        "goods": [
+                            {
+                                "subject": "麦富迪 欧纳黑森林无谷天然粮 鸡肉蛋黄小型犬幼犬粮 1.5kg",
+                                "price": "￥65.00",
+                                "small_image": {
+                                    "image": "https://img1.epetbar.com/2018-01/30/17/b515a557c4f1bfeaa18bb17536baf8da.png",
+                                    "img_size": "195X170",
+                                    "target": {
+                                        "mode": "goods_extend",
+                                        "param": {
+                                            "gid": "231362",
+                                            "extend_pam": "buytype:discount|atid:19223"
+                                        }
+                                    }
+                                },
+                                "lable": {
+                                    "name": "折扣",
+                                    "bg_color": "#ff0000"
+                                }
+                            },
+                            {
+                                "subject": "麦富迪 欧纳黑森林无谷天然粮 鸡肉蛋黄小型犬幼犬粮 10kg",
+                                "price": "￥350.00",
+                                "small_image": {
+                                    "image": "https://img1.epetbar.com/2018-01/30/17/0e40400961124f5728cfde085321f7ed.png",
+                                    "img_size": "195X170",
+                                    "target": {
+                                        "mode": "goods_extend",
+                                        "param": {
+                                            "gid": "231363",
+                                            "extend_pam": "buytype:discount|atid:19223"
+                                        }
+                                    }
+                                },
+                                "lable": {
+                                    "name": "折扣",
+                                    "bg_color": "#ff0000"
+                                }
+                            },
+                            {
+                                "subject": "麦富迪 欧纳黑森林无谷无谷粮 鸡肉牛肉小型犬成犬粮 1.5kg",
+                                "price": "￥55.00",
+                                "small_image": {
+                                    "image": "https://img1.epetbar.com/2018-01/30/17/673c7ba012b7afe4dad9717d6519fe33.png",
+                                    "img_size": "195X170",
+                                    "target": {
+                                        "mode": "goods_extend",
+                                        "param": {
+                                            "gid": "231364",
+                                            "extend_pam": "buytype:discount|atid:19223"
+                                        }
+                                    }
+                                },
+                                "lable": {
+                                    "name": "折扣",
+                                    "bg_color": "#ff0000"
+                                }
+                            },
+                            {
+                                "subject": "麦富迪 欧纳黑森林无谷无谷粮 鸡肉牛肉小型犬成犬粮 10kg",
+                                "price": "￥320.00",
+                                "small_image": {
+                                    "image": "https://img1.epetbar.com/2018-01/30/17/c54979bb3e0a7b269ee4a0c52fdf9f87.png",
+                                    "img_size": "195X170",
+                                    "target": {
+                                        "mode": "goods_extend",
+                                        "param": {
+                                            "gid": "231365",
+                                            "extend_pam": "buytype:discount|atid:19223"
+                                        }
+                                    }
+                                },
+                                "lable": {
+                                    "name": "折扣",
+                                    "bg_color": "#ff0000"
+                                }
+                            },
+                            {
+                                "subject": "麦富迪 欧纳黑森林天然无谷粮 鸭肉蛋黄通用型幼犬粮 10kg",
+                                "price": "￥320.00",
+                                "small_image": {
+                                    "image": "https://img1.epetbar.com/2018-01/30/11/82859d81ee70133bbfe78a5747007a5c.jpg",
+                                    "img_size": "195X170",
+                                    "target": {
+                                        "mode": "goods_extend",
+                                        "param": {
+                                            "gid": "231367",
+                                            "extend_pam": "buytype:discount|atid:19223"
+                                        }
+                                    }
+                                },
+                                "lable": {
+                                    "name": "折扣",
+                                    "bg_color": "#ff0000"
+                                }
+                            },
+                            {
+                                "subject": "麦富迪 欧纳黑森林天然无谷粮 鸭肉牛肉通用型成犬粮 2kg",
+                                "price": "￥69.00",
+                                "small_image": {
+                                    "image": "https://img1.epetbar.com/2018-01/30/11/58f98edd6ab8f4327a8b47f57fd448b0.jpg",
+                                    "img_size": "195X170",
+                                    "target": {
+                                        "mode": "goods_extend",
+                                        "param": {
+                                            "gid": "231368",
+                                            "extend_pam": "buytype:discount|atid:19223"
+                                        }
+                                    }
+                                },
+                                "lable": {
+                                    "name": "折扣",
+                                    "bg_color": "#ff0000"
+                                }
+                            }
+                        ],
+                        "more": {
+                            "image": "https://static.epetbar.com/static_wap/appmall/lib/list/more_all.jpg",
+                            "img_size": "220X350",
+                            "target": {
+                                "mode": "web",
+                                "param": "http://sale.epet.com/m/mould/activity/ztNDQ0NQ%3D%3D.html?tid=4445"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "index": "2442",
+            "is_show": 1,
+            "type": "12",
+            "is_dynamic": "0",
+            "type_name": "商品列表模板",
+            "menus": [
+                {
+                    "menu_name": "全部",
+                    "menu_param": 5,
+                    "menu_param_key": "cateid",
+                    "menu_font_color": "#ffffff",
+                    "menu_menu_line_colorname": "ff0000"
+                },
+                {
+                    "menu_name": "进口狗粮",
+                    "menu_param": 7,
+                    "menu_param_key": "cateid",
+                    "menu_font_color": "#ffffff",
+                    "menu_line_color": "ff0000"
+                },
+                {
+                    "menu_name": "国产狗粮",
+                    "menu_param": 3555,
+                    "menu_param_key": "cateid",
+                    "menu_font_color": "#ffffff",
+                    "menu_line_color": "ff0000"
+                },
+                {
+                    "menu_name": "处方狗粮",
+                    "menu_param": 3554,
+                    "menu_param_key": "cateid",
+                    "menu_font_color": "#ffffff",
+                    "menu_line_color": "ff0000"
+                },
+                {
+                    "menu_name": "冻干狗粮",
+                    "menu_param": 4307,
+                    "menu_param_key": "cateid",
+                    "menu_font_color": "#ffffff",
+                    "menu_line_color": "ff0000"
+                }
+            ],
+            "list": [
+                {
+                    "gspid": 5952,
+                    "gid": 105952,
+                    "cateid": 7,
+                    "subject": "加拿大原装进口 原始猎食渴望 六种鱼肉+美毛专用配方 全犬粮 2kg",
+                    "presubject": "85%深海鲜鱼（非冻鱼）成分 美毛/长肌肉/适口性高 新老配方随机发",
+                    "formats": " 2kg",
+                    "formats_values": "",
+                    "photo": "https://img1.epetbar.com/2017-12/18/18/7ad09838c3bfbc61336c977fea54e74f.jpg",
+                    "sale_price": "290.00",
+                    "market_price": "320.00",
+                    "youhui_price": 259,
+                    "fm_shareid": 105952,
+                    "brandid": 142,
+                    "order": "",
+                    "replys": 8817,
+                    "asks": 10501,
+                    "sold": "售出:2.55w",
+                    "unit": "袋",
+                    "stockmode": 2,
+                    "stock_now": 1,
+                    "stock": 1,
+                    "isBest": 1,
+                    "real_wid": 107,
+                    "virtual_wid": 1,
+                    "site": 0,
+                    "comments": "互动:(97%好评)",
+                    "dprice": "72.50元/斤",
+                    "country_photo": "https://img2.epetbar.com/nowater/2016-08/12/16/a5b3b8bc1114ddffce177d007b6346a9.jpg",
+                    "with_me": "",
+                    "gtype_icon": {},
+                    "subject_tip": "",
+                    "goods_sign": 0,
+                    "goods_icon": "",
+                    "activityLabels": [],
+                    "activityIcons": [],
+                    "send_ware": "",
+                    "extend_pam": ""
+                },
+                {
+                    "gspid": 11535,
+                    "gid": 111493,
+                    "cateid": 3555,
+                    "subject": "喜乐比SharlovY 鸡肉蔬果配方 幼母犬健康粮15kg",
+                    "presubject": "来自台湾艾澌克 荤素搭配 营养均衡",
+                    "formats": " 15kg",
+                    "formats_values": "",
+                    "photo": "https://img1.epetbar.com/2015-05/16/0d7602ba3fedbd2e7433a182c8a222e7.jpg",
+                    "sale_price": "280.00",
+                    "market_price": "325.00",
+                    "youhui_price": 275.5,
+                    "fm_shareid": 111493,
+                    "brandid": 217,
+                    "order": "",
+                    "replys": 4313,
+                    "asks": 2239,
+                    "sold": "售出:2.4w",
+                    "unit": "袋",
+                    "stockmode": 2,
+                    "stock_now": 1,
+                    "stock": 1,
+                    "isBest": 1,
+                    "real_wid": 1,
+                    "virtual_wid": 1,
+                    "site": 0,
+                    "comments": "互动:(95%好评)",
+                    "dprice": "9.33元/斤",
+                    "country_photo": "",
+                    "with_me": "",
+                    "gtype_icon": {},
+                    "subject_tip": "",
+                    "goods_sign": 0,
+                    "goods_icon": "",
+                    "activityLabels": [
+                        {
+                            "image": "https://static.epetbar.com/static_wap/appmall/lib/list/cu.png?version=2016071303",
+                            "img_size": "30X30",
+                            "target": {}
+                        }
+                    ],
+                    "activityIcons": [
+                        {
+                            "icon_char": "促",
+                            "icon_color": "#4FC0E8"
+                        }
+                    ],
+                    "send_ware": "",
+                    "extend_pam": ""
+                },
+                {
+                    "gspid": 10718,
+                    "gid": 110715,
+                    "cateid": 3555,
+                    "subject": "海洋之星 三文鱼配方 成犬粮 小颗粒 6kg",
+                    "presubject": "英国品牌 挪威三文鱼 抗敏感美毛无谷天然粮 （非真空包装）",
+                    "formats": " 6kg",
+                    "formats_values": "",
+                    "photo": "https://img1.epetbar.com/2016-12/05/18/9439283dd17a1641c9152507f4c6a51c.jpg",
+                    "sale_price": "395.00",
+                    "market_price": "450.00",
+                    "youhui_price": 0,
+                    "fm_shareid": 125664,
+                    "brandid": 127,
+                    "order": "",
+                    "replys": 5633,
+                    "asks": 3382,
+                    "sold": "售出:1.9w",
+                    "unit": "袋",
+                    "stockmode": 2,
+                    "stock_now": 1,
+                    "stock": 1,
+                    "isBest": 1,
+                    "real_wid": 1,
+                    "virtual_wid": 1,
+                    "site": 0,
+                    "comments": "互动:(98%好评)",
+                    "dprice": "32.91元/斤",
+                    "country_photo": "",
+                    "with_me": "",
+                    "gtype_icon": {},
+                    "subject_tip": "",
+                    "goods_sign": 0,
+                    "goods_icon": "",
+                    "activityLabels": [
+                        {
+                            "image": "https://static.epetbar.com/static_wap/appmall/lib/list/tagongyi.png?version=2016071303",
+                            "img_size": "78X30",
+                            "target": {}
+                        }
+                    ],
+                    "activityIcons": [
+                        {
+                            "icon_char": "TA公益",
+                            "icon_color": "#e1191d"
+                        }
+                    ],
+                    "send_ware": "",
+                    "extend_pam": ""
+                },
+                {
+                    "gspid": 5940,
+                    "gid": 105940,
+                    "cateid": 7,
+                    "subject": "加拿大原装进口 原始猎食渴望 无谷类幼犬配方狗粮 2kg",
+                    "presubject": "加拿大原装进口 80%全肉配方 高含量新鲜多样化 营养全面均衡",
+                    "formats": " 2kg",
+                    "formats_values": "",
+                    "photo": "https://img1.epetbar.com/2017-12/18/14/0e95064db264af9a9472f22711198170.jpg",
+                    "sale_price": "255.00",
+                    "market_price": "310.00",
+                    "youhui_price": 0,
+                    "fm_shareid": 105825,
+                    "brandid": 142,
+                    "order": "",
+                    "replys": 7859,
+                    "asks": 11810,
+                    "sold": "售出:1.26w",
+                    "unit": "袋",
+                    "stockmode": 2,
+                    "stock_now": 1,
+                    "stock": 1,
+                    "isBest": 1,
+                    "real_wid": 107,
+                    "virtual_wid": 1,
+                    "site": 0,
+                    "comments": "互动:(96%好评)",
+                    "dprice": "63.75元/斤",
+                    "country_photo": "https://img2.epetbar.com/nowater/2016-08/12/16/a5b3b8bc1114ddffce177d007b6346a9.jpg",
+                    "with_me": "",
+                    "gtype_icon": {},
+                    "subject_tip": "",
+                    "goods_sign": 0,
+                    "goods_icon": "",
+                    "activityLabels": [],
+                    "activityIcons": [],
+                    "send_ware": "",
+                    "extend_pam": ""
+                },
+                {
+                    "gspid": 26190,
+                    "gid": 127618,
+                    "cateid": 3555,
+                    "subject": "冠能大型犬幼犬全价犬粮 12kg",
+                    "presubject": "雀巢旗下犬粮 经典配方 助消化 促成长",
+                    "formats": " 12kg",
+                    "formats_values": "",
+                    "photo": "https://img1.epetbar.com/2016-11/28/18/fd96cf3b30a79397fb99fdfdf3d9ae0e.jpg",
+                    "sale_price": "559.00",
+                    "market_price": "708.00",
+                    "youhui_price": 139.5,
+                    "fm_shareid": 178930,
+                    "brandid": 14,
+                    "order": "",
+                    "replys": 2252,
+                    "asks": 1452,
+                    "sold": "售出:8378",
+                    "unit": "袋",
+                    "stockmode": 2,
+                    "stock_now": 1,
+                    "stock": 1,
+                    "isBest": 1,
+                    "real_wid": 1,
+                    "virtual_wid": 1,
+                    "site": 0,
+                    "comments": "互动:(96%好评)",
+                    "dprice": "23.29元/斤",
+                    "country_photo": "",
+                    "with_me": "",
+                    "gtype_icon": {},
+                    "subject_tip": "",
+                    "goods_sign": 0,
+                    "goods_icon": "",
+                    "activityLabels": [],
+                    "activityIcons": [],
+                    "send_ware": "",
+                    "extend_pam": ""
+                },
+                {
+                    "gspid": 107856,
+                    "gid": 217092,
+                    "cateid": 3555,
+                    "subject": "畅享Cheer Share 牛肉紫薯成犬粮 1.5kg",
+                    "presubject": "健美活力配方 润护肠胃 排毒通便 健康皮毛 ",
+                    "formats": " 1.5kg",
+                    "formats_values": "",
+                    "photo": "https://img1.epetbar.com/2017-09/08/13/406fa47ea69bc69758273f0a8e03c608.jpg",
+                    "sale_price": "95.00",
+                    "market_price": "114.00",
+                    "youhui_price": 0,
+                    "fm_shareid": 217093,
+                    "brandid": 1638,
+                    "order": "",
+                    "replys": 66,
+                    "asks": 4,
+                    "sold": "售出:178",
+                    "unit": "袋",
+                    "stockmode": 2,
+                    "stock_now": 1,
+                    "stock": 1,
+                    "isBest": 1,
+                    "real_wid": 1,
+                    "virtual_wid": 1,
+                    "site": 0,
+                    "comments": "互动:(98%好评)",
+                    "dprice": "31.66元/斤",
+                    "country_photo": "",
+                    "with_me": "",
+                    "gtype_icon": {},
+                    "subject_tip": "",
+                    "goods_sign": 0,
+                    "goods_icon": "",
+                    "activityLabels": [
+                        {
+                            "image": "https://static.epetbar.com/static_wap/appmall/lib/list/cu.png?version=2016071303",
+                            "img_size": "30X30",
+                            "target": {}
+                        }
+                    ],
+                    "activityIcons": [],
+                    "send_ware": "",
+                    "extend_pam": ""
+                },
+                {
+                    "gspid": 70972,
+                    "gid": 177321,
+                    "cateid": 3555,
+                    "subject": "纯皓Nutrifresh 天然无谷系列大型犬幼犬粮 2.7kg",
+                    "presubject": "无谷物 添加酵素精华 不易过敏 亲和肠道 营养好吸收 ",
+                    "formats": " 2.7kg",
+                    "formats_values": "",
+                    "photo": "https://img1.epetbar.com/2017-05/19/10/5cfd69a728ded4e4a80fd69e58aa9705.jpg",
+                    "sale_price": "195.00",
+                    "market_price": "234.00",
+                    "youhui_price": 0,
+                    "fm_shareid": 177322,
+                    "brandid": 1417,
+                    "order": "",
+                    "replys": 73,
+                    "asks": 12,
+                    "sold": "售出:142",
+                    "unit": "袋",
+                    "stockmode": 2,
+                    "stock_now": 1,
+                    "stock": 1,
+                    "isBest": 1,
+                    "real_wid": 1,
+                    "virtual_wid": 1,
+                    "site": 0,
+                    "comments": "互动:(96%好评)",
+                    "dprice": "36.11元/斤",
+                    "country_photo": "",
+                    "with_me": "",
+                    "gtype_icon": {},
+                    "subject_tip": "",
+                    "goods_sign": 0,
+                    "goods_icon": "",
+                    "activityLabels": [],
+                    "activityIcons": [],
+                    "send_ware": "",
+                    "extend_pam": ""
+                },
+                {
+                    "gspid": 10623,
+                    "gid": 110623,
+                    "cateid": 3555,
+                    "subject": "皇家royal canin MIS30小型犬奶糕/怀孕母犬/哺乳母犬1kg ",
+                    "presubject": "高蛋白子母粮 补充能量 均衡营养 好吸收易吸收",
+                    "formats": " 1kg",
+                    "formats_values": "",
+                    "photo": "https://img1.epetbar.com/2015-08/05/625dc804ee057de62d033d0e173b5bb7.jpg",
+                    "sale_price": "71.00",
+                    "market_price": "82.80",
+                    "youhui_price": 0,
+                    "fm_shareid": 110623,
+                    "brandid": 16,
+                    "order": "",
+                    "replys": 7969,
+                    "asks": 4724,
+                    "sold": "售出:4.82w",
+                    "unit": "袋",
+                    "stockmode": 2,
+                    "stock_now": 1,
+                    "stock": 1,
+                    "isBest": 1,
+                    "real_wid": 1,
+                    "virtual_wid": 1,
+                    "site": 0,
+                    "comments": "互动:(98%好评)",
+                    "dprice": "35.50元/斤",
+                    "country_photo": "",
+                    "with_me": "",
+                    "gtype_icon": {},
+                    "subject_tip": "",
+                    "goods_sign": 0,
+                    "goods_icon": "",
+                    "activityLabels": [
+                        {
+                            "image": "https://static.epetbar.com/static_wap/appmall/lib/list/cu.png?version=2016071303",
+                            "img_size": "30X30",
+                            "target": {}
+                        }
+                    ],
+                    "activityIcons": [
+                        {
+                            "icon_char": "促",
+                            "icon_color": "#4FC0E8"
+                        }
+                    ],
+                    "send_ware": "",
+                    "extend_pam": ""
+                },
+                {
+                    "gspid": 24988,
+                    "gid": 126410,
+                    "cateid": 3555,
+                    "subject": "雷米高 澳宝 牛肉肝蔬菜营养成犬粮 5kg",
+                    "presubject": "荤素搭配 补充能量 活力每天",
+                    "formats": " 5kg",
+                    "formats_values": "",
+                    "photo": "https://img1.epetbar.com/2014-04/03/409294368f9dc7fd92cc8d08b4dcf49c.jpg",
+                    "sale_price": "90.00",
+                    "market_price": "100.00",
+                    "youhui_price": 0,
+                    "fm_shareid": 126410,
+                    "brandid": 17,
+                    "order": "",
+                    "replys": 3451,
+                    "asks": 826,
+                    "sold": "售出:3.82w",
+                    "unit": "袋",
+                    "stockmode": 2,
+                    "stock_now": 1,
+                    "stock": 1,
+                    "isBest": 1,
+                    "real_wid": 1,
+                    "virtual_wid": 1,
+                    "site": 0,
+                    "comments": "互动:(97%好评)",
+                    "dprice": "9.00元/斤",
+                    "country_photo": "",
+                    "with_me": "",
+                    "gtype_icon": {},
+                    "subject_tip": "",
+                    "goods_sign": 0,
+                    "goods_icon": "",
+                    "activityLabels": [
+                        {
+                            "image": "https://static.epetbar.com/static_wap/appmall/lib/list/cu.png?version=2016071303",
+                            "img_size": "30X30",
+                            "target": {}
+                        },
+                        {
+                            "image": "https://static.epetbar.com/static_wap/appmall/lib/list/tagongyi.png?version=2016071303",
+                            "img_size": "78X30",
+                            "target": {}
+                        }
+                    ],
+                    "activityIcons": [
+                        {
+                            "icon_char": "促",
+                            "icon_color": "#4FC0E8"
+                        },
+                        {
+                            "icon_char": "TA公益",
+                            "icon_color": "#e1191d"
+                        }
+                    ],
+                    "send_ware": "",
+                    "extend_pam": ""
+                },
+                {
+                    "gspid": 41161,
+                    "gid": 142859,
+                    "cateid": 3555,
+                    "subject": "伯纳天纯 低敏无谷中大型犬成犬粮 15kg",
+                    "presubject": " 健胃促吸收 蓬松亮毛 体态优化 健骨护关节",
+                    "formats": " 15kg",
+                    "formats_values": "",
+                    "photo": "https://img1.epetbar.com/2018-03/12/16/a710c822f5ef0f992473c15b5046dcb2.jpg",
+                    "sale_price": "499.00",
+                    "market_price": "598.80",
+                    "youhui_price": 0,
+                    "fm_shareid": 196041,
+                    "brandid": 775,
+                    "order": "",
+                    "replys": 2963,
+                    "asks": 721,
+                    "sold": "售出:2.14w",
+                    "unit": "袋",
+                    "stockmode": 2,
+                    "stock_now": 1,
+                    "stock": 1,
+                    "isBest": 1,
+                    "real_wid": 1,
+                    "virtual_wid": 1,
+                    "site": 0,
+                    "comments": "互动:(98%好评)",
+                    "dprice": "16.63元/斤",
+                    "country_photo": "",
+                    "with_me": "",
+                    "gtype_icon": {},
+                    "subject_tip": "",
+                    "goods_sign": 0,
+                    "goods_icon": "",
+                    "activityLabels": [
+                        {
+                            "image": "https://static.epetbar.com/static_wap/appmall/lib/list/tagongyi.png?version=2016071303",
+                            "img_size": "78X30",
+                            "target": {}
+                        }
+                    ],
+                    "activityIcons": [
+                        {
+                            "icon_char": "TA公益",
+                            "icon_color": "#e1191d"
+                        }
+                    ],
+                    "send_ware": "",
+                    "extend_pam": ""
+                },
+                {
+                    "gspid": 33,
+                    "gid": 100033,
+                    "cateid": 3555,
+                    "subject": "澳大利亚贵族Natures Gift 鸸鹋油羊肉米饭 成犬粮 15kg",
+                    "presubject": "澳大利亚品牌 高密度营养 高能量 高健康 降低胆固醇 提升被毛亮泽度",
+                    "formats": " 15kg",
+                    "formats_values": "",
+                    "photo": "https://img1.epetbar.com/2017-08/01/17/d516d98e0fb6903ba4701459bce8ec91.jpg",
+                    "sale_price": "385.00",
+                    "market_price": "415.00",
+                    "youhui_price": 0,
+                    "fm_shareid": 118536,
+                    "brandid": 13,
+                    "order": "",
+                    "replys": 2858,
+                    "asks": 934,
+                    "sold": "售出:1.06w",
+                    "unit": "袋",
+                    "stockmode": 2,
+                    "stock_now": 1,
+                    "stock": 1,
+                    "isBest": 1,
+                    "real_wid": 1,
+                    "virtual_wid": 1,
+                    "site": 0,
+                    "comments": "互动:(96%好评)",
+                    "dprice": "12.83元/斤",
+                    "country_photo": "",
+                    "with_me": "",
+                    "gtype_icon": {},
+                    "subject_tip": "",
+                    "goods_sign": 0,
+                    "goods_icon": "",
+                    "activityLabels": [],
+                    "activityIcons": [],
+                    "send_ware": "",
+                    "extend_pam": ""
+                },
+                {
+                    "gspid": 5033,
+                    "gid": 102685,
+                    "cateid": 3555,
+                    "subject": "冠能中型犬幼犬全价犬粮 12kg",
+                    "presubject": "雀巢旗下犬粮 经典配方 助消化 促成长",
+                    "formats": " 12kg",
+                    "formats_values": "",
+                    "photo": "https://img1.epetbar.com/2016-11/28/18/24e668090a7718794fbb48a404f1bb9a.jpg",
+                    "sale_price": "559.00",
+                    "market_price": "708.00",
+                    "youhui_price": 0,
+                    "fm_shareid": 178922,
+                    "brandid": 14,
+                    "order": "",
+                    "replys": 3151,
+                    "asks": 2981,
+                    "sold": "售出:9710",
+                    "unit": "袋",
+                    "stockmode": 2,
+                    "stock_now": 1,
+                    "stock": 1,
+                    "isBest": 1,
+                    "real_wid": 1,
+                    "virtual_wid": 1,
+                    "site": 0,
+                    "comments": "互动:(95%好评)",
+                    "dprice": "23.29元/斤",
+                    "country_photo": "",
+                    "with_me": "",
+                    "gtype_icon": {},
+                    "subject_tip": "",
+                    "goods_sign": 0,
+                    "goods_icon": "",
+                    "activityLabels": [],
+                    "activityIcons": [],
+                    "send_ware": "",
+                    "extend_pam": ""
+                },
+                {
+                    "gspid": 117920,
+                    "gid": 228325,
+                    "cateid": 7,
+                    "subject": "加拿大原装进口纽顿 无谷低升糖系列 去骨鸡肉&火鸡肉全龄犬粮 1.82kg ",
+                    "presubject": "中小型犬适用 低敏无谷配方 单一蛋白质 易吸收 安心食材 低糖健康 去骨鲜肉 两鸡同吃 美毛亮毛 帮助消化",
+                    "formats": " 1.82kg",
+                    "formats_values": "",
+                    "photo": "https://img1.epetbar.com/2017-12/07/16/9da86a9eea993530763c4eb10befe2aa.png",
+                    "sale_price": "190.00",
+                    "market_price": "228.00",
+                    "youhui_price": 0,
+                    "fm_shareid": 228326,
+                    "brandid": 2029,
+                    "order": "",
+                    "replys": 4,
+                    "asks": 0,
+                    "sold": "售出:41",
+                    "unit": "袋",
+                    "stockmode": 2,
+                    "stock_now": 1,
+                    "stock": 1,
+                    "isBest": 1,
+                    "real_wid": 1,
+                    "virtual_wid": 1,
+                    "site": 0,
+                    "comments": "互动:(100%好评)",
+                    "dprice": "52.19元/斤",
+                    "country_photo": "https://img2.epetbar.com/nowater/2016-08/12/16/a5b3b8bc1114ddffce177d007b6346a9.jpg",
+                    "with_me": "",
+                    "gtype_icon": {},
+                    "subject_tip": "",
+                    "goods_sign": 0,
+                    "goods_icon": "",
+                    "activityLabels": [
+                        {
+                            "image": "https://static.epetbar.com/static_wap/appmall/lib/list/cu.png?version=2016071303",
+                            "img_size": "30X30",
+                            "target": {}
+                        }
+                    ],
+                    "activityIcons": [
+                        {
+                            "icon_char": "促",
+                            "icon_color": "#4FC0E8"
+                        }
+                    ],
+                    "send_ware": "",
+                    "extend_pam": ""
+                },
+                {
+                    "gspid": 11490,
+                    "gid": 111490,
+                    "cateid": 3555,
+                    "subject": "喜乐比SharlovY 鸡肉蔬果配方 幼母犬健康粮1.5kg",
+                    "presubject": "来自台湾艾澌克 荤素搭配 营养均衡",
+                    "formats": " 1.5kg",
+                    "formats_values": "",
+                    "photo": "https://img1.epetbar.com/2015-05/16/d2d57fa9309ea5c52a4d91fa2cadfefe.jpg",
+                    "sale_price": "35.00",
+                    "market_price": "55.00",
+                    "youhui_price": 0,
+                    "fm_shareid": 111493,
+                    "brandid": 217,
+                    "order": "",
+                    "replys": 4313,
+                    "asks": 2239,
+                    "sold": "售出:2.24w",
+                    "unit": "袋",
+                    "stockmode": 2,
+                    "stock_now": 1,
+                    "stock": 1,
+                    "isBest": 1,
+                    "real_wid": 1,
+                    "virtual_wid": 1,
+                    "site": 0,
+                    "comments": "互动:(97%好评)",
+                    "dprice": "11.66元/斤",
+                    "country_photo": "",
+                    "with_me": "",
+                    "gtype_icon": {},
+                    "subject_tip": "",
+                    "goods_sign": 0,
+                    "goods_icon": "",
+                    "activityLabels": [
+                        {
+                            "image": "https://static.epetbar.com/static_wap/appmall/lib/list/cu.png?version=2016071303",
+                            "img_size": "30X30",
+                            "target": {}
+                        }
+                    ],
+                    "activityIcons": [
+                        {
+                            "icon_char": "促",
+                            "icon_color": "#4FC0E8"
+                        }
+                    ],
+                    "send_ware": "",
+                    "extend_pam": ""
+                },
+                {
+                    "gspid": 62718,
+                    "gid": 168186,
+                    "cateid": 3555,
+                    "subject": "麦富迪 牛肉双拼系列 贵宾专用牛肉双拼成犬粮 2kg",
+                    "presubject": " 美味双拼 味觉享受 营养搭配 ",
+                    "formats": "",
+                    "formats_values": "",
+                    "photo": "https://img1.epetbar.com/2016-06/06/10/24f86d3a9818329140b3f53dd37e1c6f.jpg",
+                    "sale_price": "65.00",
+                    "market_price": "72.00",
+                    "youhui_price": 0,
+                    "fm_shareid": 168186,
+                    "brandid": 817,
+                    "order": "",
+                    "replys": 832,
+                    "asks": 87,
+                    "sold": "售出:5393",
+                    "unit": "袋",
+                    "stockmode": 2,
+                    "stock_now": 1,
+                    "stock": 1,
+                    "isBest": 1,
+                    "real_wid": 1,
+                    "virtual_wid": 1,
+                    "site": 0,
+                    "comments": "互动:(98%好评)",
+                    "dprice": "16.25元/斤",
+                    "country_photo": "",
+                    "with_me": "",
+                    "gtype_icon": {},
+                    "subject_tip": "",
+                    "goods_sign": 0,
+                    "goods_icon": "",
+                    "activityLabels": [
+                        {
+                            "image": "https://static.epetbar.com/static_wap/appmall/lib/list/cu.png?version=2016071303",
+                            "img_size": "30X30",
+                            "target": {}
+                        }
+                    ],
+                    "activityIcons": [],
+                    "send_ware": "",
+                    "extend_pam": ""
+                },
+                {
+                    "gspid": 2825,
+                    "gid": 102825,
+                    "cateid": 3555,
+                    "subject": "珍宝SANPO深海鱼油配方幼犬粮 10kg",
+                    "presubject": "小精包装 3+1突破配方 全面营养",
+                    "formats": " 10kg",
+                    "formats_values": "",
+                    "photo": "https://img1.epetbar.com/2016-11/22/12/3443a03ae552a23d26ab6d7ef95c194a.jpg",
+                    "sale_price": "179.00",
+                    "market_price": "220.00",
+                    "youhui_price": 0,
+                    "fm_shareid": 102825,
+                    "brandid": 44,
+                    "order": "",
+                    "replys": 1301,
+                    "asks": 616,
+                    "sold": "售出:5178",
+                    "unit": "袋",
+                    "stockmode": 2,
+                    "stock_now": 1,
+                    "stock": 1,
+                    "isBest": 1,
+                    "real_wid": 1,
+                    "virtual_wid": 1,
+                    "site": 0,
+                    "comments": "互动:(94%好评)",
+                    "dprice": "8.95元/斤",
+                    "country_photo": "",
+                    "with_me": "",
+                    "gtype_icon": {},
+                    "subject_tip": "",
+                    "goods_sign": 0,
+                    "goods_icon": "",
+                    "activityLabels": [],
+                    "activityIcons": [],
+                    "send_ware": "",
+                    "extend_pam": ""
+                },
+                {
+                    "gspid": 19988,
+                    "gid": 120049,
+                    "cateid": 7,
+                    "subject": " 加拿大原装进口 爱肯拿Acana 小型犬幼犬母犬配方粮(鸡肉+鱼) 2kg",
+                    "presubject": "WDJ推荐 加拿大渴望狗粮同厂出品 原装进口",
+                    "formats": " 2kg",
+                    "formats_values": "",
+                    "photo": "https://img1.epetbar.com/2016-10/13/16/f398cf2db6aecfad51e6a86f75ab6b15.jpg",
+                    "sale_price": "190.00",
+                    "market_price": "228.00",
+                    "youhui_price": 0,
+                    "fm_shareid": 120050,
+                    "brandid": 413,
+                    "order": "",
+                    "replys": 4313,
+                    "asks": 5266,
+                    "sold": "售出:4897",
+                    "unit": "袋",
+                    "stockmode": 2,
+                    "stock_now": 1,
+                    "stock": 1,
+                    "isBest": 1,
+                    "real_wid": 107,
+                    "virtual_wid": 1,
+                    "site": 0,
+                    "comments": "互动:(96%好评)",
+                    "dprice": "47.50元/斤",
+                    "country_photo": "https://img2.epetbar.com/nowater/2016-08/12/16/a5b3b8bc1114ddffce177d007b6346a9.jpg",
+                    "with_me": "",
+                    "gtype_icon": {},
+                    "subject_tip": "",
+                    "goods_sign": 0,
+                    "goods_icon": "",
+                    "activityLabels": [],
+                    "activityIcons": [],
+                    "send_ware": "",
+                    "extend_pam": ""
+                },
+                {
+                    "gspid": 312,
+                    "gid": 100312,
+                    "cateid": 3555,
+                    "subject": "冠能 小型犬挑食及美毛配方成犬全价犬粮 2.5kg",
+                    "presubject": "雀巢旗下犬粮 经典配方 助消化 促成长",
+                    "formats": " 2.5kg",
+                    "formats_values": "",
+                    "photo": "https://img1.epetbar.com/2016-11/28/18/95dd27fc9e975a13b48a7dc9652e47c2.jpg",
+                    "sale_price": "169.00",
+                    "market_price": "204.00",
+                    "youhui_price": 90,
+                    "fm_shareid": 116047,
+                    "brandid": 14,
+                    "order": "",
+                    "replys": 1420,
+                    "asks": 396,
+                    "sold": "售出:4245",
+                    "unit": "袋",
+                    "stockmode": 2,
+                    "stock_now": 1,
+                    "stock": 1,
+                    "isBest": 1,
+                    "real_wid": 1,
+                    "virtual_wid": 1,
+                    "site": 0,
+                    "comments": "互动:(99%好评)",
+                    "dprice": "33.80元/斤",
+                    "country_photo": "",
+                    "with_me": "",
+                    "gtype_icon": {},
+                    "subject_tip": "",
+                    "goods_sign": 0,
+                    "goods_icon": "",
+                    "activityLabels": [],
+                    "activityIcons": [],
+                    "send_ware": "",
+                    "extend_pam": ""
+                },
+                {
+                    "gspid": 97377,
+                    "gid": 205720,
+                    "cateid": 3555,
+                    "subject": "优基 益生菌小型成犬粮 2kg",
+                    "presubject": "活力益生菌 调节狗狗肠胃问题",
+                    "formats": "",
+                    "formats_values": "",
+                    "photo": "https://img1.epetbar.com/2017-07/04/14/a0ecf1f35cf851489d7123226dca8ab7.jpg",
+                    "sale_price": "85.00",
+                    "market_price": "102.00",
+                    "youhui_price": 0,
+                    "fm_shareid": 0,
+                    "brandid": 759,
+                    "order": "",
+                    "replys": 356,
+                    "asks": 15,
+                    "sold": "售出:3102",
+                    "unit": "袋",
+                    "stockmode": 2,
+                    "stock_now": 1,
+                    "stock": 1,
+                    "isBest": 1,
+                    "real_wid": 1,
+                    "virtual_wid": 1,
+                    "site": 0,
+                    "comments": "互动:(97%好评)",
+                    "dprice": "21.25元/斤",
+                    "country_photo": "",
+                    "with_me": "",
+                    "gtype_icon": {},
+                    "subject_tip": "",
+                    "goods_sign": 0,
+                    "goods_icon": "",
+                    "activityLabels": [],
+                    "activityIcons": [],
+                    "send_ware": "",
+                    "extend_pam": ""
+                },
+                {
+                    "gspid": 82192,
+                    "gid": 189782,
+                    "cateid": 7,
+                    "subject": "耐吉斯SOLUTION 比利时版 鸡肉+三文鱼成犬粮 3磅/1.36kg",
+                    "presubject": "天然食材 低敏呵护 亮丽皮毛 美味享受",
+                    "formats": " 1.36kg",
+                    "formats_values": "",
+                    "photo": "https://img1.epetbar.com/2016-12/21/10/d1910db9d7e66405c16f19d484cccd5b.png",
+                    "sale_price": "95.00",
+                    "market_price": "145.00",
+                    "youhui_price": 0,
+                    "fm_shareid": 189787,
+                    "brandid": 931,
+                    "order": "",
+                    "replys": 439,
+                    "asks": 60,
+                    "sold": "售出:2090",
+                    "unit": "件",
+                    "stockmode": 2,
+                    "stock_now": 1,
+                    "stock": 1,
+                    "isBest": 1,
+                    "real_wid": 1,
+                    "virtual_wid": 1,
+                    "site": 0,
+                    "comments": "互动:(98%好评)",
+                    "dprice": "34.92元/斤",
+                    "country_photo": "https://img2.epetbar.com/nowater/2016-08/12/16/767d7a6fa90ae39212dc0e9c087cb524.jpg",
+                    "with_me": "",
+                    "gtype_icon": {},
+                    "subject_tip": "",
+                    "goods_sign": 0,
+                    "goods_icon": "",
+                    "activityLabels": [],
+                    "activityIcons": [],
+                    "send_ware": "",
+                    "extend_pam": ""
+                }
+            ]
+        }
+    ]
+}

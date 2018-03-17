@@ -1,5 +1,7 @@
 export default {
   home:[],
   sort:[],
-  brand:[]
+  brand:[],
+  dog:[],
+  allBrand:[]
 }
