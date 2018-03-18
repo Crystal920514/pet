@@ -47,8 +47,8 @@
             <span class="item_icon">
               <i class="iconfont icon-mima"></i>
             </span>
-            <input type='text' placeholder="请输入图片内容" v-model="captcha">
-            <span style="display:block;position: absolute;top:52px;right:0;">
+            <input type='text' maxlength="4" placeholder="请输入图片内容" v-model="captcha">
+            <span style="display:block;position: absolute;top:52px;right:20px;">
               <img @click="change($event)" src="https://wap.epet.com/share/seccode.html?hash=5157&amp;height=30&amp;width=85" >
             </span>
           </div>
@@ -56,10 +56,10 @@
             <span class="item_icon">
               <i class="iconfont icon-mima"></i>
             </span>
-            <input type="password" placeholder="动态密码" v-model="code">
+            <input type="password" maxlength="6" placeholder="动态密码" v-model="code">
             <a style="position: absolute;width:100px;font-size: 14px;color: red;
-                      height: 30px; line-height:30px;top:95px;right:0;border: 1px solid black"
-               href="###" >获取动态验证码</a>
+                      height: 30px; line-height:30px;top:95px;right:20px;border: 1px solid black"
+               href="javascript:;" @click="getCode">获取动态验证码</a>
           </div>
           <div>
             <p>忘记密码?</p>
@@ -129,7 +129,7 @@
         }else{
           //验证码登录
           const {phone,code,captcha} = this
-          if(!/^1\d{10}$/.test(this.phone)){
+          if(!/^1([358][0-9]|4[579]|66|7[0135678]|9[89])[0-9]{8}$/.test(phone)){
             MessageBox('警告', '请输入正确的手机号');
             return
           } else if(!captcha.trim()){
@@ -144,6 +144,16 @@
           });
         }
 
+      },
+      getCode(){
+        const {phone} = this
+        if(!/^1([358][0-9]|4[579]|66|7[0135678]|9[89])[0-9]{8}$/.test(phone)){
+          MessageBox('警告', '请输入正确的手机号');
+          return
+        }else{
+          MessageBox('警告', '该手机号已停机');
+          return
+        }
       }
 
 

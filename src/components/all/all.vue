@@ -1,8 +1,8 @@
 <template>
   <div class="allShow" >
-    <div class="wrap" ref="foodsWarpperUl">
+    <div class="wrap" ref="brandUl">
       <headerTop :name="name"/>
-      <div class="content" v-for="(item,index) in allBrand" :key="index">
+      <div class="content content-hook " v-for="(item,index) in allBrand" :key="index">
         <a :id="item.order">{{item.order}}</a>
         <div v-for="(p,index) in item.list" :key="index">
             <div class="item-pic">
@@ -16,7 +16,8 @@
       </div>
     </div>
     <div class="right-word" >
-      <a :href="`#${item.order}`"
+      <a href="javascript:;" :class="{current:index===currentIndex}"
+         @click="selectCurrent(index)"
          v-for="(item,index) in allBrand" :key="index">{{item.order}}</a>
     </div>
   </div>
@@ -32,6 +33,7 @@
         show:false,
         name:'全部品牌',
         scrollY:0,
+        tops: [],
 
       }
     },
@@ -41,19 +43,42 @@
         this.$router.replace(path)
       },
       _initScroll(){
-        let listScroll = new BScroll('.allShow',{
+        this.listScroll = new BScroll('.allShow',{
           scrollY: true,
           click:true,
           probeType:2 //不监视惯性滑动
         })
-        listScroll.on('scroll',(pos)=>{
+        this.listScroll.on('scroll',(pos)=>{
           console.log(pos.y)
           this.scrollY = Math.abs(pos.y)
         })
-        listScroll.on('scrollEnd',(pos)=>{
+        this.listScroll.on('scrollEnd',(pos)=>{
           console.log('滑动结束'+pos.y)
           this.scrollY = Math.abs(pos.y)
         })
+      },
+      _initTops(){
+        const tops = []
+        let top = 0
+        //计算每个top,存到tops
+        tops.push(top)
+
+        const lis = this.$refs.brandUl.getElementsByClassName('content-hook')
+        Array.prototype.slice.call(lis).forEach((item,index)=>{
+          top += item.clientHeight
+          tops.push(top)
+        })
+        this.tops = tops
+        console.log(this.tops)
+      },
+      selectCurrent (index) {
+        console.log('selectCurrent()')
+        // 得到滚动目标坐标
+        const top = this.tops[index]
+        // 更新目标scrollY值
+        this.scrollY = top
+        // 平滑滚动到指定位置
+        this.listScroll.scrollTo(0, -top, 300)
       },
 
     },
@@ -65,15 +90,17 @@
           this.$nextTick(() => {
             //滚动
             this._initScroll()
+            this._initTops()
           })
       })
     },
     computed:{
       ...mapState(['allBrand']),
-      currentIndex () { // findIndex(): 返回值是第个返回true所对应的index
-        const {scrollY, tops} = this
+      currentIndex(){
+        const {scrollY,tops} = this
         // scrollY要>=当前的top && 小于下一个top
         return tops.findIndex((top, index) => scrollY>=top && scrollY<tops[index+1])
+
       }
     }
   }
@@ -138,4 +165,6 @@
         height 16px
         line-height 16px
         display block
+        &.current
+          color yellow
 </style>

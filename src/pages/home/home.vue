@@ -134,7 +134,7 @@
           </div>
           <div class="line-pic-two" v-if="home[16]">
             <img  class="pic-item" :src="home[16].content_images[0].image" alt="">
-            <div class="pic-item" >
+            <div class="pic-item">
               <img :src="home[16].content_images[1].image" alt="">
               <img :src="home[16].content_images[2].image" alt="">
             </div>
