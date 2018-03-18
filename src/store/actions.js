@@ -38,24 +38,26 @@ export default {
       })
   },
   //获取狗
-  reqDog({commit}){
+  reqDog({commit},callback){
     getUrl('/api/dog')
       .then((response) =>{
         const result = response.data
         if (result.code === 0) {
           const dog = result.data
           commit(RECEIVE_DOG, {dog})
+          callback && callback()
         }
       })
   },
   //获取品牌
-  reqAllBrand({commit}){
+  reqAllBrand({commit},callback){
     getUrl('/api/allBrand')
       .then((response) =>{
         const result = response.data
         if (result.code === 0) {
           const allBrand = result.data
           commit(RECEIVE_ALLBRAND, {allBrand})
+          callback && callback()
         }
       })
   }

@@ -25,8 +25,7 @@
             "type": "102",
             "is_dynamic": "0",
             "type_name": "二级可切换菜单",
-            "data": {
-                "categorys": [
+            "categorys": [
                     {
                         "name": "国产主粮",
                         "image": "https://img1.epetbar.com/2017-08/02/14/443c7633200dacd9b0403985b45f42ac.jpg",
@@ -34,9 +33,7 @@
                         "img_size": "187X136",
                         "image_choose": "https://img1.epetbar.com/2017-08/02/14/80262ba5cfea6d22408daa472bd763d8.jpg",
                         "image_choose_size": "187X136",
-                        "small_cate": {
-                            "menu_column": 3,
-                            "menus": [
+                        "menus": [
                                 {
                                     "name": "全犬",
                                     "image": "https://img1.epetbar.com/2017-08/02/16/470a7338afe79f6775f32dbb38f26a9c.jpg",
@@ -92,8 +89,6 @@
                                     }
                                 }
                             ]
-                        },
-                        "target": []
                     },
                     {
                         "name": "进口主粮",
@@ -102,9 +97,7 @@
                         "img_size": "187X136",
                         "image_choose": "https://img1.epetbar.com/2017-08/02/14/f500a1d8b9c334b0be55a349f04b0bec.jpg",
                         "image_choose_size": "187X136",
-                        "small_cate": {
-                            "menu_column": 3,
-                            "menus": [
+                        "menus": [
                                 {
                                     "name": "全犬",
                                     "image": "https://img1.epetbar.com/2017-08/02/15/b21b49c58dea4eb0a9a057795d71620d.jpg",
@@ -160,8 +153,7 @@
                                     }
                                 }
                             ]
-                        },
-                        "target": []
+
                     },
                     {
                         "name": "口味配方",
@@ -170,8 +162,7 @@
                         "img_size": "187X136",
                         "image_choose": "https://img1.epetbar.com/2017-08/02/14/9cd38109100b17000abea371addcb1b0.jpg",
                         "image_choose_size": "187X136",
-                        "small_cate": {
-                            "menu_column": 3,
+
                             "menus": [
                                 {
                                     "name": "鸡肉",
@@ -228,8 +219,7 @@
                                     }
                                 }
                             ]
-                        },
-                        "target": []
+
                     },
                     {
                         "name": "单斤价格",
@@ -238,8 +228,7 @@
                         "img_size": "187X136",
                         "image_choose": "https://img1.epetbar.com/2017-08/02/14/9063225106d67e2cd05167f71ff6e7cc.jpg",
                         "image_choose_size": "187X136",
-                        "small_cate": {
-                            "menu_column": 3,
+
                             "menus": [
                                 {
                                     "name": "10元以内",
@@ -296,49 +285,14 @@
                                     }
                                 }
                             ]
-                        },
-                        "target": []
+
                     }
                 ]
-            }
         },
         {
-            "index": "2213",
-            "is_show": 1,
-            "type": "100",
-            "is_dynamic": "0",
-            "type_name": "模块分割线",
-            "value": {
-                "image": "",
-                "img_size": "750x25",
-                "target": {}
-            }
-        },
-        {
-            "index": "2212",
-            "is_show": 1,
-            "type": "13",
-            "is_dynamic": "0",
-            "type_name": "通用广告模板",
-            "left_image": {
-                "image": "",
-                "img_size": "",
-                "target": {}
-            },
-            "center_image": {
-                "image": "",
-                "img_size": "",
-                "target": {}
-            },
-            "right_image": {
-                "image": "",
-                "img_size": "",
-                "target": {}
-            },
-            "show_line": "0",
-            "content_images": [
-                [
-                    {
+          "index": "2212",
+          "content_images": [
+              {
                         "advid": "22902",
                         "atid": "0",
                         "image": "https://img2.epetbar.com/nowater/2017-07/31/14/5df340d068e4bc97759d801edcd5ac19.jpg@!water",
@@ -347,10 +301,8 @@
                             "mode": "web",
                             "param": "https://wap.epet.com/specialist/article.html?aid=27"
                         }
-                    }
-                ],
-                [
-                    {
+                    },
+              {
                         "advid": "22903",
                         "atid": "0",
                         "image": "https://img2.epetbar.com/nowater/2017-07/31/14/6ebc7bc52a02cc2fb2d725dd9ebe58aa.jpg@!water",
@@ -360,7 +312,7 @@
                             "param": "http://sale.epet.com/m/mould/activity/ztMTIxOQ%3D%3D.html?tid=1219"
                         }
                     },
-                    {
+              {
                         "advid": "22906",
                         "atid": "0",
                         "image": "https://img2.epetbar.com/nowater/2017-07/31/14/e8fa7e93ded2be02792cbade66353832.jpg@!water",
@@ -370,196 +322,14 @@
                             "param": "https://wap.epet.com/petschool/SchoolDetail.html?&aid=36"
                         }
                     }
-                ]
-            ]
+          ]
         },
         {
             "index": "2226",
-            "is_show": 1,
-            "type": "21",
-            "is_dynamic": "0",
-            "type_name": "自定义Title模板",
-            "value": {
-                "title_height": "100",
-                "top_line": {
-                    "isline": 0,
-                    "line_color": "",
-                    "padding": "",
-                    "line_image": {}
-                },
-                "bottom_line": {
-                    "isline": 0,
-                    "line_color": "",
-                    "padding": "",
-                    "line_image": {}
-                },
-                "left": {},
-                "center": {
-                    "type": "image",
-                    "text": {},
-                    "img": {
-                        "image": "https://img2.epetbar.com/nowater/2017-08/16/21/ebf85555c851f683bf33cd4c14f7f68b.jpg",
-                        "img_size": "387x31",
-                        "target": {
-                            "mode": "",
-                            "param": ""
-                        }
-                    }
-                },
-                "right": {}
-            }
-        },
-        {
-            "index": "2215",
-            "is_show": 1,
-            "type": "101",
-            "is_dynamic": "0",
-            "type_name": "单广告+商品列表",
-            "data": {
-                "advAndGoods": [
-                    {
-                        "big_image": {
-                            "image": "https://img2.epetbar.com/nowater/2018-03/06/11/82fcb7a9c439dc489ff8735424745a9d.png@!water",
-                            "img_size": "750X330",
-                            "target": {
-                                "mode": "web",
-                                "param": "http://sale.epet.com/m/mould/activity/ztNDQ0NQ%3D%3D.html?tid=4445"
-                            }
-                        },
-                        "goods": [
-                            {
-                                "subject": "麦富迪 欧纳黑森林无谷天然粮 鸡肉蛋黄小型犬幼犬粮 1.5kg",
-                                "price": "￥65.00",
-                                "small_image": {
-                                    "image": "https://img1.epetbar.com/2018-01/30/17/b515a557c4f1bfeaa18bb17536baf8da.png",
-                                    "img_size": "195X170",
-                                    "target": {
-                                        "mode": "goods_extend",
-                                        "param": {
-                                            "gid": "231362",
-                                            "extend_pam": "buytype:discount|atid:19223"
-                                        }
-                                    }
-                                },
-                                "lable": {
-                                    "name": "折扣",
-                                    "bg_color": "#ff0000"
-                                }
-                            },
-                            {
-                                "subject": "麦富迪 欧纳黑森林无谷天然粮 鸡肉蛋黄小型犬幼犬粮 10kg",
-                                "price": "￥350.00",
-                                "small_image": {
-                                    "image": "https://img1.epetbar.com/2018-01/30/17/0e40400961124f5728cfde085321f7ed.png",
-                                    "img_size": "195X170",
-                                    "target": {
-                                        "mode": "goods_extend",
-                                        "param": {
-                                            "gid": "231363",
-                                            "extend_pam": "buytype:discount|atid:19223"
-                                        }
-                                    }
-                                },
-                                "lable": {
-                                    "name": "折扣",
-                                    "bg_color": "#ff0000"
-                                }
-                            },
-                            {
-                                "subject": "麦富迪 欧纳黑森林无谷无谷粮 鸡肉牛肉小型犬成犬粮 1.5kg",
-                                "price": "￥55.00",
-                                "small_image": {
-                                    "image": "https://img1.epetbar.com/2018-01/30/17/673c7ba012b7afe4dad9717d6519fe33.png",
-                                    "img_size": "195X170",
-                                    "target": {
-                                        "mode": "goods_extend",
-                                        "param": {
-                                            "gid": "231364",
-                                            "extend_pam": "buytype:discount|atid:19223"
-                                        }
-                                    }
-                                },
-                                "lable": {
-                                    "name": "折扣",
-                                    "bg_color": "#ff0000"
-                                }
-                            },
-                            {
-                                "subject": "麦富迪 欧纳黑森林无谷无谷粮 鸡肉牛肉小型犬成犬粮 10kg",
-                                "price": "￥320.00",
-                                "small_image": {
-                                    "image": "https://img1.epetbar.com/2018-01/30/17/c54979bb3e0a7b269ee4a0c52fdf9f87.png",
-                                    "img_size": "195X170",
-                                    "target": {
-                                        "mode": "goods_extend",
-                                        "param": {
-                                            "gid": "231365",
-                                            "extend_pam": "buytype:discount|atid:19223"
-                                        }
-                                    }
-                                },
-                                "lable": {
-                                    "name": "折扣",
-                                    "bg_color": "#ff0000"
-                                }
-                            },
-                            {
-                                "subject": "麦富迪 欧纳黑森林天然无谷粮 鸭肉蛋黄通用型幼犬粮 10kg",
-                                "price": "￥320.00",
-                                "small_image": {
-                                    "image": "https://img1.epetbar.com/2018-01/30/11/82859d81ee70133bbfe78a5747007a5c.jpg",
-                                    "img_size": "195X170",
-                                    "target": {
-                                        "mode": "goods_extend",
-                                        "param": {
-                                            "gid": "231367",
-                                            "extend_pam": "buytype:discount|atid:19223"
-                                        }
-                                    }
-                                },
-                                "lable": {
-                                    "name": "折扣",
-                                    "bg_color": "#ff0000"
-                                }
-                            },
-                            {
-                                "subject": "麦富迪 欧纳黑森林天然无谷粮 鸭肉牛肉通用型成犬粮 2kg",
-                                "price": "￥69.00",
-                                "small_image": {
-                                    "image": "https://img1.epetbar.com/2018-01/30/11/58f98edd6ab8f4327a8b47f57fd448b0.jpg",
-                                    "img_size": "195X170",
-                                    "target": {
-                                        "mode": "goods_extend",
-                                        "param": {
-                                            "gid": "231368",
-                                            "extend_pam": "buytype:discount|atid:19223"
-                                        }
-                                    }
-                                },
-                                "lable": {
-                                    "name": "折扣",
-                                    "bg_color": "#ff0000"
-                                }
-                            }
-                        ],
-                        "more": {
-                            "image": "https://static.epetbar.com/static_wap/appmall/lib/list/more_all.jpg",
-                            "img_size": "220X350",
-                            "target": {
-                                "mode": "web",
-                                "param": "http://sale.epet.com/m/mould/activity/ztNDQ0NQ%3D%3D.html?tid=4445"
-                            }
-                        }
-                    }
-                ]
-            }
+            "image": "https://img2.epetbar.com/nowater/2017-08/16/21/ebf85555c851f683bf33cd4c14f7f68b.jpg"
         },
         {
             "index": "2442",
-            "is_show": 1,
-            "type": "12",
-            "is_dynamic": "0",
-            "type_name": "商品列表模板",
             "menus": [
                 {
                     "menu_name": "全部",
@@ -678,10 +448,10 @@
                             "target": {}
                         }
                     ],
-                    "activityIcons": [
-                        {
-                            "icon_char": "促",
-                            "icon_color": "#4FC0E8"
+                        "activityIcons": [
+                            {
+                                "icon_char": "促",
+                                "icon_color": "#4FC0E8"
                         }
                     ],
                     "send_ware": "",

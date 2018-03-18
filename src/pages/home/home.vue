@@ -120,7 +120,7 @@
           </div>
           <!--一堆小图-->
           <div class="small-pic" v-if="home[12]">
-            <img v-for="(f,index) in home[12].content_images" :key="index"
+            <img  v-for="(f,index) in home[12].content_images" :key="index"
              :src="f.image" alt="">
           </div>
           <div class="line-pic" v-if="home[13]">
@@ -188,16 +188,20 @@
             scrollX: true,
             click:true
           })
-          let swiper = new Swiper('.swiper-container', {
-            pagination: {
-              el: '.swiper-pagination',
-              dynamicBullets: true,
-            },
-            autoplay: {
-              delay: 2500,
-              disableOnInteraction: false,
-            }
-          })
+          setTimeout(()=>{
+            let swiper = new Swiper('.swiper-container', {
+              loop: true,
+              pagination: {
+                el: '.swiper-pagination',
+                dynamicBullets: true,
+              },
+              autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+              }
+            })
+          },500)
+
           let scroll = new BScroll('.header-nav',{
             scrollX: true,
             click:true

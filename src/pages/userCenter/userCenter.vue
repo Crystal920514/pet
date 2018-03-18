@@ -129,8 +129,8 @@
         }else{
           //验证码登录
           const {phone,code,captcha} = this
-          if(!phone.trim()){
-            MessageBox('警告', '请输入手机号');
+          if(!/^1\d{10}$/.test(this.phone)){
+            MessageBox('警告', '请输入正确的手机号');
             return
           } else if(!captcha.trim()){
             MessageBox('警告', '请输入图片验证码');
