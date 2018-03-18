@@ -3,7 +3,7 @@
     <!--头部-->
     <div class="header">
       <div class="header-top">
-        <div class="header-address">
+        <div @click="$router.push('/address')" class="header-address">
           <span>狗狗</span>
           <span>|</span>
           <span>重庆</span>
@@ -121,7 +121,7 @@
           <!--一堆小图-->
           <div class="small-pic" v-if="home[12]">
             <img  v-for="(f,index) in home[12].content_images" :key="index"
-             :src="f.image" alt="">
+              v-lazy="f.image" alt="">
           </div>
           <div class="line-pic" v-if="home[13]">
             <img :src="home[13].value[0].image" alt="">

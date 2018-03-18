@@ -9,6 +9,7 @@ import tab1 from '../components/tab1/tab1.vue'
 import tab2 from '../components/tab2/tab2.vue'
 import dog from '../components/dog/dog.vue'
 import all from '../components/all/all.vue'
+import address from '../components/address/address.vue'
 
 Vue.use(VueRouter)
 
@@ -72,5 +73,9 @@ export default new VueRouter({
       path:'/',
       redirect:'/home'
     },
+    {
+      'path':'/address',
+      component:address
+    }
   ]
 })
