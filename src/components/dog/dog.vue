@@ -29,7 +29,7 @@
       <div class="dog-promotion" v-if="dog[3]">
         <img :src="dog[3].image" alt="">
       </div>
-      <div class="dog-choose">
+      <div class="dog-choose" >
         <p>全部</p>
         <p>进口狗粮</p>
         <p>国产狗粮</p>
@@ -55,6 +55,12 @@
         </li>
       </ul>
     </div>
+    <div class="dog-choose-hide" :class="{on:isFixed}">
+      <p>全部</p>
+      <p>进口狗粮</p>
+      <p>国产狗粮</p>
+      <p>处方狗粮</p>
+    </div>
   </div>
 </template>
 
@@ -67,7 +73,9 @@
     data(){
       return{
         name:'狗狗主粮',
-        picIndex:0
+        picIndex:0,
+        scrollY:'',
+        isFixed:false
       }
     },
     components:{
@@ -76,11 +84,8 @@
     mounted(){
       this.$store.dispatch('reqDog',()=>{
         this.$nextTick(()=>{
-          let dogScroll = new BScroll('.dog',{
-            scrollY: true,
-            click:true
+          this._initScroll()
           })
-        })
       })
     },
     computed:{
@@ -89,7 +94,26 @@
     methods:{
       getIndex(index){
         this.picIndex = index
-      }
+      },
+      _initScroll(){
+        this.dogScroll = new BScroll('.dog',{
+          scrollY: true,
+          click:true,
+          probeType:3 //不监视惯性滑动
+        })
+        this.dogScroll.on('scroll',(pos)=>{
+          console.log(pos.y)
+          this.scrollY = Math.abs(pos.y)
+          console.log('计算'+this.scrollY)
+
+          if(this.scrollY>630){
+            this.isFixed = true
+          }else{
+            this.isFixed = false
+          }
+        })
+
+      },
     }
   }
 </script>
@@ -195,4 +219,25 @@
               color slategray
             >img
               width 25px
+  .dog-choose-hide
+      display flex
+      justify-content space-around
+      height 50px
+      width 100%
+      align-items center
+      visibility hidden
+      background-color white
+      box-shadow 0 5px 5px #888888
+      &.on
+        visibility visible
+        position fixed
+        top 0
+      >p
+        width 20%
+        text-align center
+        font-size 12px
+        background-color #cadedf
+        border-radius 5px
+        height 20px
+        line-height 20px
 </style>

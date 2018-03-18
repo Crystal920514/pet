@@ -6,7 +6,7 @@
         <div @click="$router.push('/address')" class="header-address">
           <span>狗狗</span>
           <span>|</span>
-          <span>重庆</span>
+          <span>北京</span>
           <span class="item_icon">
             <i class="iconfont icon-xiala"></i>
          </span>
