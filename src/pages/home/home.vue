@@ -238,6 +238,7 @@
       flex-direction column
       justify-content space-between
       z-index 6
+      box-shadow 0 3px 2px #bcb1b1
       .header-top
         display flex
         height 60px
