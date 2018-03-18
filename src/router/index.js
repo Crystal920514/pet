@@ -8,6 +8,7 @@ import userCenter from '../pages/userCenter/userCenter.vue'
 import tab1 from '../components/tab1/tab1.vue'
 import tab2 from '../components/tab2/tab2.vue'
 import dog from '../components/dog/dog.vue'
+import all from '../components/all/all.vue'
 
 Vue.use(VueRouter)
 
@@ -60,12 +61,16 @@ export default new VueRouter({
       }
     },
     {
+      path:'/dog',
+      component:dog
+    },
+    {
+      path:'/all',
+      component:all
+    },
+    {
       path:'/',
       redirect:'/home'
     },
-    {
-      path:'/dog',
-      component:dog
-    }
   ]
 })

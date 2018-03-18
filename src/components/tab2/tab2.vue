@@ -1,6 +1,6 @@
 <template>
   <div class="tab2" >
-    <div class="brand-list" :class="{on:!isShowAll}">
+    <div class="brand-list" >
       <div class="tab2-container" v-for="(b,index) in brand" :key="index">
         <div class="tab2-title">
           <span>—— {{b.title}} ——</span>
@@ -16,8 +16,7 @@
         </ul>
       </div>
     </div>
-    <div class="all" @click="showAll">全部</div>
-    <all :showAll="showAll" :isShowAll="isShowAll" />
+    <div class="all" @click="$router.push('/all')">全部</div>
   </div>
 </template>
 
@@ -25,11 +24,7 @@
   import all from '../all/all.vue'
   import BScroll from 'better-scroll'
   export default {
-    data(){
-      return {
-        isShowAll:false
-      }
-    },
+
     props:{
       brand:Array
     },
@@ -61,9 +56,6 @@
   right 0
   background-color #F3F4F5
   .brand-list
-    display none
-    &.on
-      display block
     .tab2-container
       width 100%
       background-color white

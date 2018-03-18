@@ -1,9 +1,9 @@
 <template>
-  <div class="allShow" :class="{on:isShowAll}">
+  <div class="allShow" >
     <div class="wrap">
       <headerTop :name="name"/>
       <div class="content" v-for="(item,index) in allBrand" :key="index">
-        <a :id="item.order">{{item.order}}</a>
+        <a href="javascript:;">{{item.order}}</a>
         <div v-for="(p,index) in item.list" :key="index">
             <div class="item-pic">
               <img :src="p.logo" alt="">
@@ -16,7 +16,7 @@
       </div>
     </div>
     <div class="right-word" >
-      <a :href="`#${item.order}`" v-for="(item,index) in allBrand" :key="index">{{item.order}}</a>
+      <a href="javascript:;"  v-for="(item,index) in allBrand" :key="index">{{item.order}}</a>
     </div>
   </div>
 </template>
@@ -61,16 +61,12 @@
 
 <style lang="stylus" rel="stylesheet/stylus">
   .allShow
-    position fixed
+    position absolute
     left 0
     right 0
     top 0
     bottom 0
     background-color white
-    z-index 300
-    display none
-    &.on
-      display block
     .wrap
       .content
         >a

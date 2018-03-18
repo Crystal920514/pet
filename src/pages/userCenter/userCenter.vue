@@ -21,19 +21,19 @@
             <span class="item_icon">
               <i class="iconfont icon-xingmingyonghumingnicheng"></i>
              </span>
-            <input type="text" placeholder="手机号/邮箱/用户名">
+            <input type="text" placeholder="手机号/邮箱/用户名" v-model="name">
           </div>
           <div>
             <span class="item_icon">
               <i class="iconfont icon-mima"></i>
             </span>
-            <input type='password' placeholder="输入密码">
+            <input type='password' placeholder="输入密码" v-model="pwd">
           </div>
           <div>
             <p>忘记密码?</p>
           </div>
           <div>
-            <button>登录</button>
+            <button @click="submitForm">登录</button>
           </div>
         </div>
         <div class="login-code" v-else>
@@ -41,13 +41,13 @@
             <span class="item_icon">
               <i class="iconfont icon-shouji"></i>
             </span>
-            <input type="text" maxlength="11" placeholder="已注册的手机号">
+            <input type="text" maxlength="11" placeholder="已注册的手机号" v-model="phone">
           </div>
           <div>
             <span class="item_icon">
               <i class="iconfont icon-mima"></i>
             </span>
-            <input type='text' placeholder="请输入图片内容">
+            <input type='text' placeholder="请输入图片内容" v-model="captcha">
             <span style="display:block;position: absolute;top:52px;right:0;">
               <img @click="change($event)" src="https://wap.epet.com/share/seccode.html?hash=5157&amp;height=30&amp;width=85" >
             </span>
@@ -56,7 +56,7 @@
             <span class="item_icon">
               <i class="iconfont icon-mima"></i>
             </span>
-            <input type="password" placeholder="动态密码">
+            <input type="password" placeholder="动态密码" v-model="code">
             <a style="position: absolute;width:100px;font-size: 14px;color: red;
                       height: 30px; line-height:30px;top:95px;right:0;border: 1px solid black"
                href="###" >获取动态验证码</a>
@@ -65,7 +65,7 @@
             <p>忘记密码?</p>
           </div>
           <div>
-            <button>登录</button>
+            <button @click="submitForm">登录</button>
           </div>
         </div>
       </div>
@@ -80,8 +80,8 @@
         <span class="item_icon">
           <i class="iconfont icon-shouji"></i>
         </span>
-        <input type="text" maxlength="11" placeholder="请输入手机号码" v-model="phone" >
-        <p :class="{on:phone}">下一步</p>
+        <input type="text" maxlength="11" placeholder="请输入手机号码" v-model="iphone" >
+        <p :class="{on:iphone}">下一步</p>
         <br>
         <p class="on" style="background-color: olivedrab" @click="setShow">返回</p>
       </div>
@@ -90,12 +90,18 @@
 </template>
 
 <script>
+  import {MessageBox} from 'mint-ui'
   export default {
     data(){
       return {
-        isPwd:true,
+        isPwd:true, //密码登录
         isShow:false,
-        phone:''
+        iphone:'',
+        phone: '', //手机号
+        code: '', //短信验证码
+        name: '', //用户名
+        pwd: '', // 密码
+        captcha: '', // 图片验证码
       }
     },
     methods:{
@@ -104,6 +110,40 @@
       },
       change(event){
         event.target.src='https://wap.epet.com/share/seccode.html?amp;height=30&amp;width=85&_='+Math.random()
+      },
+      submitForm(){
+
+        if(this.isPwd){
+          //密码登录
+          const {name,pwd} = this
+          if(!name.trim()){
+            MessageBox('警告', '请输入用户名');
+            return
+          }else if(!pwd.trim()){
+            MessageBox('警告', '请输入密码');
+            return
+          }
+          MessageBox.alert('登录成功').then(action => {
+            this.$router.replace('/home')
+          });
+        }else{
+          //验证码登录
+          const {phone,code,captcha} = this
+          if(!phone.trim()){
+            MessageBox('警告', '请输入手机号');
+            return
+          } else if(!captcha.trim()){
+            MessageBox('警告', '请输入图片验证码');
+            return
+          }else if(!code.trim()){
+            MessageBox('警告', '请输入短信验证码');
+            return
+          }
+          MessageBox.alert('登录成功').then(action => {
+            this.$router.replace('/home')
+          });
+        }
+
       }
 
 

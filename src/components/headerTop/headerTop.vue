@@ -2,7 +2,7 @@
 <template>
   <div class="component-header">
     <div class="shop-header">
-      <span class="item_icon" @click="$router.replace('/home')">
+      <span class="item_icon" @click="$router.back()">
         <i class="iconfont icon-fanhui"></i>
       </span>
       <span>{{name}}</span>
